@@ -22,6 +22,7 @@ public class Main extends Application {
         Button btn4 = new Button("Micek ssie");
         Button btn5 = new Button("Urban ssie");
         Button btn6 = new Button("Testtttt");
+        Button btn7 = new Button("dupa");
     }
 
 
