@@ -16,7 +16,8 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
 
-        Button button = new Button("Test");
+        Button btn1 = new Button("Test");
+        Button btn2 = new Button("Test");
     }
 
 
