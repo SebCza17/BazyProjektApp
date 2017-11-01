@@ -18,6 +18,7 @@ public class Main extends Application {
 
         Button btn1 = new Button("Test");
         Button btn2 = new Button("Test");
+        Button btn2 = new Button("Git to guwno");
     }
 
 
