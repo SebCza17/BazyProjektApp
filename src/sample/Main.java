@@ -21,6 +21,7 @@ public class Main extends Application {
         Button btn3 = new Button("zmień tekst w środku");
         Button btn4 = new Button("Micek ssie");
         Button btn5 = new Button("Urban ssie");
+        Button btn6 = new Button("Testtttt");
     }
 
 
