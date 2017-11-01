@@ -17,7 +17,7 @@ public class Main extends Application {
         primaryStage.show();
 
         Button btn1 = new Button("Test");
-        Button btn2 = new Button("Test");
+        Button btn2 = new Button("cos");
         Button btn3 = new Button("zmień tekst w środku");
         Button btn4 = new Button("Micek ssie");
         Button btn5 = new Button("Urban ssie");
