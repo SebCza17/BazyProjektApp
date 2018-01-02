@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <class>JPAEntity.AuthorEntity</class>
+        <class>JPAEntity.CollectionEntity</class>
+        <class>JPAEntity.ContactEntity</class>
+        <class>JPAEntity.DescriptionEntity</class>
+        <class>JPAEntity.LocationEntity</class>
+        <class>JPAEntity.PersonaldataEntity</class>
+        <class>JPAEntity.UserEntity</class>
+        <class>JPAEntity.UserdataEntity</class>
+        <class>JPAEntity.WorkEntity</class>
+        <class>JPAEntity.WorkdataEntity</class>
+        <properties>
+            <property name="eclipselink.jdbc.url" value="jdbc:postgresql://horton.elephantsql.com:5432/khgmqurw"/>
+            <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
+
+            <property name="javax.persistence.jdbc.user" value="khgmqurw" />
+            <property name="javax.persistence.jdbc.password" value="-cx2K1PqeldhTeeiSQqhD2_hPuuPrS8a" />
+
+
+            <!--Tworzy tabele z JPAentity jesli ich nie ma-->
+
+    <!--        <property name="eclipselink.ddl-generation" value="create-tables" />
+            <property name="eclipselink.ddl-generation.output-mode" value="database" />-->
+
+
+        </properties>
+    </persistence-unit>
+</persistence>
