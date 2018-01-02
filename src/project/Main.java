@@ -1,8 +1,8 @@
 package project;
 
+import JPAEntity.UserEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -11,7 +11,9 @@ import javafx.stage.Stage;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 import java.io.IOException;
+import java.util.List;
 
 public class Main extends Application {
 
@@ -60,6 +62,11 @@ public class Main extends Application {
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("NewPersistenceUnit");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
+
+        Query query = entityManager.createQuery("Select s from UserEntity s");
+        List<UserEntity> userEntityList = query.getResultList();
+        UserEntity userEntity = userEntityList.get(0);
+        System.out.println(userEntity.getEmail());
 
 
         launch(args);
