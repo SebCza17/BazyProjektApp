@@ -4,8 +4,10 @@ import JPAEntity.UserEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import javax.persistence.EntityManager;
@@ -17,7 +19,7 @@ import java.util.List;
 
 public class Main extends Application {
 
-    private Stage primaryStage;
+    private static Stage primaryStage;
     private BorderPane MainScene;
     private GridPane LoginOrRegister;
 
@@ -54,6 +56,31 @@ public class Main extends Application {
             MainScene.setCenter(LoginOrRegister);
 
         }catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+   public static void showRegister(){
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/Register.fxml"));
+            AnchorPane page = loader.load();
+
+            Stage registerStage = new Stage();
+            registerStage.setTitle("Rejestracja nowego użytkownika");
+            registerStage.initModality(Modality.WINDOW_MODAL);
+            registerStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            registerStage.setScene(scene);
+
+            registerStage.setMinHeight(237.5);
+            registerStage.setMaxHeight(237.5);
+            registerStage.setMinWidth(366);
+            registerStage.setMaxWidth(366);
+
+            registerStage.showAndWait();
+
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
