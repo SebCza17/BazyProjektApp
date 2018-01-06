@@ -25,12 +25,12 @@
             <Label text="Email" />
             <Label text="Hasło" GridPane.rowIndex="1" />
             <Label text="Powtórz hasło" GridPane.rowIndex="2" />
-            <TextField prefWidth="173.0" GridPane.columnIndex="1" />
-            <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="EmailField" prefWidth="173.0" GridPane.columnIndex="1" />
+            <PasswordField fx:id="PassField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="Pass2Field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <Button fx:id="CancelButton" layoutX="284.0" layoutY="161.0" mnemonicParsing="false" onAction="#onClickCancel" prefWidth="75.0" text="Cancel" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" />
-      <Button layoutX="50.0" layoutY="161.0" mnemonicParsing="false" prefWidth="75.0" text="Ok" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="100.0" />
+      <Button layoutX="50.0" layoutY="161.0" mnemonicParsing="false" prefWidth="75.0" text="Ok" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="100.0" onAction="#onClickOK" />
    </children>
 </AnchorPane>
