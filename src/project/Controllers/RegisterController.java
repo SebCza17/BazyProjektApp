@@ -1,5 +1,6 @@
 package project.Controllers;
 
+import ConnectionClass.MainConn;
 import ConnectionClass.RegisterConnControler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -41,8 +42,13 @@ public class RegisterController {
     private boolean validation(){
         if (Objects.equals(PassField.getText(), Pass2Field.getText())) {
             if (!Objects.equals(EmailField.getText(), "")) {
-                System.out.println("all ok");
-                return true;
+                if(MainConn.checkEmail(EmailField.getText())) {
+                    System.out.println("all ok");
+                    return true;
+                } else {
+                    System.out.println("Istnieje juz taki email");
+                    return false;
+                }
             } else {
                 System.out.println("Blad Emaila");
                 return false;

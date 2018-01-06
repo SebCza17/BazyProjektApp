@@ -11,7 +11,7 @@ import java.util.List;
 public class MainConn {
 
 
-    public static EntityManager initialConnection() {
+    static EntityManager initialConnection() {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("NewPersistenceUnit");
         return entityManagerFactory.createEntityManager();
     }
@@ -20,16 +20,24 @@ public class MainConn {
 
        EntityManager entityManager = initialConnection();
 
-       Query query = entityManager.createQuery("Select s from UserEntity s");
-       List<UserEntity> userEntityList = query.getResultList();
-       UserEntity userEntity = userEntityList.get(0);
-       System.out.println(userEntity.getEmail());
+
 
        closeConnection(entityManager);
 
    }
 
-   public static void closeConnection(EntityManager entityManager){
+   public static boolean checkEmail(String email){
+       EntityManager entityManager = initialConnection();
+
+       Query query = entityManager.createQuery("SELECT COUNT(s.email) FROM UserEntity s WHERE s.email = '" + email +  "'");
+       Long count = (Long) query.getSingleResult();
+
+       closeConnection(entityManager);
+
+       return count == 0;
+   }
+
+   static void closeConnection(EntityManager entityManager){
        entityManager.close();
    }
 }

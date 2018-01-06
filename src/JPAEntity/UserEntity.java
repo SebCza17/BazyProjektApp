@@ -5,20 +5,14 @@ import javax.persistence.*;
 @Entity
 @Table(name = "user", schema = "public", catalog = "khgmqurw")
 public class UserEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int iduser;
+
     private String pass;
     private String email;
     private String permissions;
 
-    @Id
-    @Column(name = "iduser")
-    public int getIduser() {
-        return iduser;
-    }
-
-    public void setIduser(int iduser) {
-        this.iduser = iduser;
-    }
 
     @Basic
     @Column(name = "pass")
