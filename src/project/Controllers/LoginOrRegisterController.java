@@ -13,6 +13,6 @@ public class LoginOrRegisterController {
 
     @FXML
     private void onClickLogin() {
-
+        Main.showLogin();
     }
 }

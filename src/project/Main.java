@@ -62,16 +62,16 @@ public class Main extends Application {
             AnchorPane page = loader.load();
 
             Stage registerStage = new Stage();
-            registerStage.setTitle("Rejestracja nowego użytkownika");
+            //registerStage.setTitle("Rejestracja nowego użytkownika");
             registerStage.initModality(Modality.WINDOW_MODAL);
             registerStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
             registerStage.setScene(scene);
 
-            registerStage.setMinHeight(237.5);
-            registerStage.setMaxHeight(237.5);
-            registerStage.setMinWidth(366);
-            registerStage.setMaxWidth(366);
+            registerStage.setMinHeight(259);
+            registerStage.setMaxHeight(259);
+            registerStage.setMinWidth(216);
+            registerStage.setMaxWidth(216);
 
             registerStage.showAndWait();
 
@@ -79,6 +79,30 @@ public class Main extends Application {
             e.printStackTrace();
         }
     }
+
+   public static void showLogin(){
+       try {
+           FXMLLoader loader = new FXMLLoader();
+           loader.setLocation(Main.class.getResource("FXML/Login.fxml"));
+           AnchorPane page = loader.load();
+
+           Stage registerStage = new Stage();
+           registerStage.initModality(Modality.WINDOW_MODAL);
+           registerStage.initOwner(primaryStage);
+           Scene scene = new Scene(page);
+           registerStage.setScene(scene);
+
+           registerStage.setMinHeight(259);
+           registerStage.setMaxHeight(259);
+           registerStage.setMinWidth(216);
+           registerStage.setMaxWidth(216);
+
+           registerStage.showAndWait();
+
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
+   }
 
     public static void main(String[] args) {
 
