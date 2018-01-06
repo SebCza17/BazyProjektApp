@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.util.Objects;
@@ -19,6 +20,7 @@ public class RegisterController {
     public TextField EmailField;
     public PasswordField PassField;
     public PasswordField Pass2Field;
+    public Label ErrorLabel;
 
 
     @FXML
@@ -32,9 +34,6 @@ public class RegisterController {
         if (validation()) {
             RegisterConnControler.addUser(EmailField.getText(), Pass2Field.getText());
         }
-        else {
-            System.out.println("Cos poszlo nie tak");
-        }
 
 
     }
@@ -43,18 +42,23 @@ public class RegisterController {
         if (Objects.equals(PassField.getText(), Pass2Field.getText())) {
             if (!Objects.equals(EmailField.getText(), "")) {
                 if(MainConn.checkEmail(EmailField.getText())) {
+                    ErrorLabel.setText("Success!");
+                    ErrorLabel.setTextFill(Color.web("Green"));
                     System.out.println("all ok");
                     return true;
                 } else {
-                    System.out.println("Istnieje juz taki email");
+                    ErrorLabel.setText("Email is already Use!");
+                    ErrorLabel.setTextFill(Color.web("Red"));
                     return false;
                 }
             } else {
-                System.out.println("Blad Emaila");
+                ErrorLabel.setText("Incorrect Email!");  //TO DO validation email construction
+                ErrorLabel.setTextFill(Color.web("Red"));
                 return false;
             }
         } else {
-            System.out.println("Błąd Hasla");
+            ErrorLabel.setText("Passwords are different!");
+            ErrorLabel.setTextFill(Color.web("Red"));
             return false;
         }
     }
