@@ -34,7 +34,7 @@ public class LoginController {
 
     public void onClickOk() {
         if(validation()){
-            ErrorLabel.setText("Login Success!" + Main.userEntity.getPass());
+            ErrorLabel.setText("Login Success!" + Main.userEntity.getIduser());
             ErrorLabel.setTextFill(Color.web("Green"));
             Main.initMainFrameAfterLogin();
 

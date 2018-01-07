@@ -13,6 +13,15 @@ public class UserEntity {
     private String email;
     private String permissions;
 
+    @Id
+    @Column(name = "iduser")
+    public int getIduser() {
+        return iduser;
+    }
+
+    private void setIduser(int iduser) {
+        this.iduser = iduser;
+    }
 
     @Basic
     @Column(name = "pass")
