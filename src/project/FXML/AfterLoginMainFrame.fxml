@@ -15,7 +15,7 @@
               <MenuItem mnemonicParsing="false" text="Add Collection" />
                   <MenuItem mnemonicParsing="false" text="Edit Profile" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Sign Out" />
+                  <MenuItem mnemonicParsing="false" text="Sign Out" onAction="#onClickSignOut" />
             </items>
           </Menu>
         </menus>

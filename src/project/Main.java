@@ -16,9 +16,9 @@ import java.io.IOException;
 public class Main extends Application {
 
     private static Stage primaryStage;
-    private BorderPane FrameBeforeLogin;
+    private static BorderPane FrameBeforeLogin;
     private static BorderPane FrameAfterLogin;
-    private GridPane LoginOrRegister;
+    private static GridPane LoginOrRegister;
 
     public static UserEntity userEntity = null;
 
@@ -28,11 +28,9 @@ public class Main extends Application {
         this.primaryStage.setTitle("BazyProjektApp");
 
         initMainFrameBeforeLogin();
-
-        initLoginOrRegister();
     }
 
-    public void initMainFrameBeforeLogin() {
+    public static void initMainFrameBeforeLogin() {
         try{
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("FXML/BeforeLoginMainFrame.fxml"));
@@ -41,9 +39,13 @@ public class Main extends Application {
             Scene scene = new Scene(FrameBeforeLogin);
             primaryStage.setScene(scene);
             primaryStage.show();
+
+            initLoginOrRegister();
+            
         } catch (IOException e){
             e.printStackTrace();
         }
+
     }
 
     public static void initMainFrameAfterLogin() {
@@ -60,7 +62,7 @@ public class Main extends Application {
         }
     }
 
-    public void initLoginOrRegister() {
+    public static void initLoginOrRegister() {
         try{
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("FXML/LoginOrRegister.fxml"));

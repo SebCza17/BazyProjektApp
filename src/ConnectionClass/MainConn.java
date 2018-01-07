@@ -58,6 +58,10 @@ public class MainConn {
        }
    }
 
+   public static void logOut(){
+       Main.userEntity = null;
+   }
+
    static void closeConnection(EntityManager entityManager){
        entityManager.close();
    }
