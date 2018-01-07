@@ -15,7 +15,8 @@ import java.io.IOException;
 public class Main extends Application {
 
     private static Stage primaryStage;
-    private BorderPane MainScene;
+    private BorderPane FrameBeforeLogin;
+    private BorderPane FrameAfterLogin;
     private GridPane LoginOrRegister;
 
     @Override
@@ -23,18 +24,32 @@ public class Main extends Application {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("BazyProjektApp");
 
-        initMainScene();
+        initMainFrameBeforeLogin();
 
         initLoginOrRegister();
     }
 
-    public void initMainScene() {
+    public void initMainFrameBeforeLogin() {
         try{
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("FXML/BeforeLoginMainScene.fxml"));
-            MainScene = loader.load();
+            loader.setLocation(Main.class.getResource("FXML/BeforeLoginMainFrame.fxml"));
+            FrameBeforeLogin = loader.load();
 
-            Scene scene = new Scene(MainScene);
+            Scene scene = new Scene(FrameBeforeLogin);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    public void initMainFrameAfterLogin() {
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/AfterLoginMainFrame.fxml"));
+            FrameAfterLogin = loader.load();
+
+            Scene scene = new Scene(FrameAfterLogin);
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException e){
@@ -48,7 +63,7 @@ public class Main extends Application {
             loader.setLocation(Main.class.getResource("FXML/LoginOrRegister.fxml"));
             LoginOrRegister = loader.load();
 
-            MainScene.setCenter(LoginOrRegister);
+            FrameBeforeLogin.setCenter(LoginOrRegister);
 
         }catch (IOException e) {
             e.printStackTrace();
