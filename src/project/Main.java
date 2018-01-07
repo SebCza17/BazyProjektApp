@@ -1,6 +1,7 @@
 package project;
 
 import ConnectionClass.MainConn;
+import JPAEntity.UserEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,8 +17,10 @@ public class Main extends Application {
 
     private static Stage primaryStage;
     private BorderPane FrameBeforeLogin;
-    private BorderPane FrameAfterLogin;
+    private static BorderPane FrameAfterLogin;
     private GridPane LoginOrRegister;
+
+    public static UserEntity userEntity = null;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -43,7 +46,7 @@ public class Main extends Application {
         }
     }
 
-    public void initMainFrameAfterLogin() {
+    public static void initMainFrameAfterLogin() {
         try{
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("FXML/AfterLoginMainFrame.fxml"));

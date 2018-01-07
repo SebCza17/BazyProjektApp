@@ -1,6 +1,7 @@
 package project.Controllers;
 
 import ConnectionClass.MainConn;
+import JPAEntity.UserEntity;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -33,8 +34,9 @@ public class LoginController {
 
     public void onClickOk() {
         if(validation()){
-            ErrorLabel.setText("Login Success!");
+            ErrorLabel.setText("Login Success!" + Main.userEntity.getPass());
             ErrorLabel.setTextFill(Color.web("Green"));
+            Main.initMainFrameAfterLogin();
 
             Timeline timeline = new Timeline(new KeyFrame(
                     Duration.millis(2000),

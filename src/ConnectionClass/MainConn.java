@@ -1,6 +1,7 @@
 package ConnectionClass;
 
 import JPAEntity.UserEntity;
+import project.Main;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -43,9 +44,18 @@ public class MainConn {
        Query query = entityManager.createQuery("SELECT COUNT(s.iduser) FROM UserEntity s where s.email ='" + email + "' and s.pass = '" + password + "'");
        Long count = (Long) query.getSingleResult();
 
-       closeConnection(entityManager);
 
-       return count == 1;
+
+       if(count == 1){
+           Query query1 = entityManager.createQuery("SELECT s FROM UserEntity s where s.email ='" + email + "' and s.pass = '" + password + "'");
+           List<UserEntity> userEntities = query1.getResultList();
+           Main.userEntity = userEntities.get(0);
+           closeConnection(entityManager);
+           return true;
+       } else {
+           closeConnection(entityManager);
+           return false;
+       }
    }
 
    static void closeConnection(EntityManager entityManager){
