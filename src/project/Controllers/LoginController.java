@@ -26,23 +26,19 @@ public class LoginController {
 
 
     @FXML
-    private void onClickCancel(ActionEvent event) {
-        closeLogin();
-    }
-
-    private void closeLogin(){
+    private void onClickCancel() {
         Stage stage = (Stage) CancelButton.getScene().getWindow();
         stage.close();
     }
 
-    public void onClickOk(ActionEvent actionEvent) {
+    public void onClickOk() {
         if(validation()){
             ErrorLabel.setText("Login Success!");
             ErrorLabel.setTextFill(Color.web("Green"));
 
             Timeline timeline = new Timeline(new KeyFrame(
                     Duration.millis(2000),
-                    ae -> closeLogin()));
+                    ae -> onClickCancel()));
             timeline.play();
         }
     }

@@ -27,11 +27,7 @@ public class RegisterController {
 
 
     @FXML
-    private void onClickCancel(ActionEvent event) {
-        closeRegister();
-    }
-
-    private void closeRegister(){
+    private void onClickCancel() {
         Stage stage = (Stage) CancelButton.getScene().getWindow();
         stage.close();
     }
@@ -42,7 +38,7 @@ public class RegisterController {
             RegisterConnControler.addUser(EmailField.getText(), Pass2Field.getText());
             Timeline timeline = new Timeline(new KeyFrame(
                     Duration.millis(2000),
-                    ae -> closeRegister()));
+                    ae -> onClickCancel()));
             timeline.play();
         }
 
