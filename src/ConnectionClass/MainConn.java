@@ -37,6 +37,17 @@ public class MainConn {
        return count == 0;
    }
 
+   public static boolean checkLogin(String email, String password){
+       EntityManager entityManager = initialConnection();
+
+       Query query = entityManager.createQuery("SELECT COUNT(s.iduser) FROM UserEntity s where s.email ='" + email + "' and s.pass = '" + password + "'");
+       Long count = (Long) query.getSingleResult();
+
+       closeConnection(entityManager);
+
+       return count == 1;
+   }
+
    static void closeConnection(EntityManager entityManager){
        entityManager.close();
    }
