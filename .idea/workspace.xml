@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/project/Controllers/BeforeLoginMainFrameController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/project/FXML/AfterLoginMainFrame.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/project/FXML/BeforeLoginMainScene.fxml" afterPath="$PROJECT_DIR$/src/project/FXML/BeforeLoginMainFrame.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Controllers/BeforeLoginMainSceneController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/BeforeLoginMainSceneController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Main.java" afterPath="$PROJECT_DIR$/src/project/Main.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,10 +79,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/project/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="266">
               <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
+                <element signature="method#initMainFrameAfterLogin#0;class#Main#0" expanded="false" />
                 <element signature="method#showRegister#0;class#Main#0" expanded="false" />
                 <element signature="method#showLogin#0;class#Main#0" expanded="false" />
                 <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -509,7 +505,7 @@
       <workItem from="1515286627587" duration="1575000" />
       <workItem from="1515322819945" duration="89000" />
       <workItem from="1515341518317" duration="2399000" />
-      <workItem from="1515343932481" duration="393000" />
+      <workItem from="1515343932481" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1509565492240</created>
@@ -623,11 +619,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515343104261</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Lekkie poprawki kodu + FrameAfterLogin">
+      <created>1515344345661</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1515344345661</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28658000" />
+    <option name="totallyTimeSpent" value="28946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -722,7 +725,8 @@
     <MESSAGE value="Dodanie wyswietlania efektu walidacji" />
     <MESSAGE value="time po pomyslnej rejestracji do zamkniecia okna" />
     <MESSAGE value="Lekkie poprawki kodu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lekkie poprawki kodu" />
+    <MESSAGE value="Lekkie poprawki kodu + FrameAfterLogin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lekkie poprawki kodu + FrameAfterLogin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -759,6 +763,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
+            <element signature="method#initMainFrameAfterLogin#0;class#Main#0" expanded="false" />
             <element signature="method#showRegister#0;class#Main#0" expanded="false" />
             <element signature="method#showLogin#0;class#Main#0" expanded="false" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -790,6 +796,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
+            <element signature="method#initMainFrameAfterLogin#0;class#Main#0" expanded="false" />
             <element signature="method#showRegister#0;class#Main#0" expanded="false" />
             <element signature="method#showLogin#0;class#Main#0" expanded="false" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -821,6 +829,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
+            <element signature="method#initMainFrameAfterLogin#0;class#Main#0" expanded="false" />
             <element signature="method#showRegister#0;class#Main#0" expanded="false" />
             <element signature="method#showLogin#0;class#Main#0" expanded="false" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -852,6 +862,8 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
+            <element signature="method#initMainFrameAfterLogin#0;class#Main#0" expanded="false" />
             <element signature="method#showRegister#0;class#Main#0" expanded="false" />
             <element signature="method#showLogin#0;class#Main#0" expanded="false" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -901,6 +913,8 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
+            <element signature="method#initMainFrameAfterLogin#0;class#Main#0" expanded="false" />
             <element signature="method#showRegister#0;class#Main#0" expanded="false" />
             <element signature="method#showLogin#0;class#Main#0" expanded="false" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -914,6 +928,8 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
+            <element signature="method#initMainFrameAfterLogin#0;class#Main#0" expanded="false" />
             <element signature="method#showRegister#0;class#Main#0" expanded="false" />
             <element signature="method#showLogin#0;class#Main#0" expanded="false" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -1144,10 +1160,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="266">
           <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
+            <element signature="method#initMainFrameAfterLogin#0;class#Main#0" expanded="false" />
             <element signature="method#showRegister#0;class#Main#0" expanded="false" />
             <element signature="method#showLogin#0;class#Main#0" expanded="false" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
