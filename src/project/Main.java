@@ -136,6 +136,8 @@ public class Main extends Application {
             newCollection.initOwner(primaryStage);
             Scene scene = new Scene(page);
             newCollection.setScene(scene);
+            newCollection.setMinWidth(506);
+            newCollection.setMinHeight(379);
 
             newCollection.showAndWait();
 

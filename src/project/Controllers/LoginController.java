@@ -37,11 +37,11 @@ public class LoginController {
             ErrorLabel.setText("Login Success!" + Main.userEntity.getIduser());
             ErrorLabel.setTextFill(Color.web("Green"));
             Main.initMainFrameAfterLogin();
-
-            Timeline timeline = new Timeline(new KeyFrame(
+            onClickCancel();
+            /*Timeline timeline = new Timeline(new KeyFrame(
                     Duration.millis(2000),
                     ae -> onClickCancel()));
-            timeline.play();
+            timeline.play();*/
         }
     }
 
