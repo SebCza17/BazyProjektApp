@@ -5,6 +5,7 @@ import JPAEntity.UserEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Accordion;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -62,7 +63,7 @@ public class Main extends Application {
         }
     }
 
-    public static void initLoginOrRegister() {
+    private static void initLoginOrRegister() {
         try{
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("FXML/LoginOrRegister.fxml"));
@@ -75,7 +76,7 @@ public class Main extends Application {
         }
     }
 
-   public static void showRegister(){
+    public static void showRegister(){
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("FXML/Register.fxml"));
@@ -100,29 +101,49 @@ public class Main extends Application {
         }
     }
 
-   public static void showLogin(){
-       try {
-           FXMLLoader loader = new FXMLLoader();
-           loader.setLocation(Main.class.getResource("FXML/Login.fxml"));
-           AnchorPane page = loader.load();
+    public static void showLogin(){
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/Login.fxml"));
+            AnchorPane page = loader.load();
 
-           Stage registerStage = new Stage();
-           registerStage.initModality(Modality.WINDOW_MODAL);
-           registerStage.initOwner(primaryStage);
-           Scene scene = new Scene(page);
-           registerStage.setScene(scene);
+            Stage registerStage = new Stage();
+            registerStage.initModality(Modality.WINDOW_MODAL);
+            registerStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            registerStage.setScene(scene);
 
-           registerStage.setMinHeight(259);
-           registerStage.setMaxHeight(259);
-           registerStage.setMinWidth(216);
-           registerStage.setMaxWidth(216);
+            registerStage.setMinHeight(259);
+            registerStage.setMaxHeight(259);
+            registerStage.setMinWidth(216);
+            registerStage.setMaxWidth(216);
 
-           registerStage.showAndWait();
+            registerStage.showAndWait();
 
-       } catch (IOException e) {
-           e.printStackTrace();
-       }
-   }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void addCollection(){
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/AddCollection.fxml"));
+            Accordion page = loader.load();
+
+            Stage newCollection = new Stage();
+            newCollection.initModality(Modality.WINDOW_MODAL);
+            newCollection.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            newCollection.setScene(scene);
+
+            newCollection.showAndWait();
+
+
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 
     public static void main(String[] args) {
 

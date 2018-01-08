@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="490.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1">
+  <panes>
+    <TitledPane animated="false" text="Location">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="269.0" prefWidth="572.0">
+               <children>
+                  <Accordion layoutX="18.6" layoutY="19.6" prefHeight="253.0" prefWidth="579.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <panes>
+                      <TitledPane animated="false" text="Contact">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="425.0">
+                                 <children>
+                                    <TextField layoutX="70.0" layoutY="14.0" promptText="Phone Number" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0" />
+                                    <TextField layoutX="90.0" layoutY="52.0" promptText="Email" AnchorPane.leftAnchor="15.0" />
+                                    <TextField layoutX="90.0" layoutY="77.0" promptText="Adres" AnchorPane.leftAnchor="15.0" />
+                                    <TextField layoutX="90.0" layoutY="102.0" promptText="Adres" AnchorPane.leftAnchor="15.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" prefWidth="579.0" text="Desciption">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField layoutX="15.0" layoutY="14.0" promptText="Title Location" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="14.0" />
+                                    <TextArea layoutX="25.0" layoutY="49.0" prefHeight="145.0" prefWidth="328.0" promptText="Description Location" AnchorPane.leftAnchor="15.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane animated="false" text="Description">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="285.0" promptText="Tittle Collection" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                  <TextArea layoutX="24.0" layoutY="49.0" prefHeight="200.0" prefWidth="284.0" promptText="Description Collection" />
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+  </panes>
+</Accordion>

@@ -15,4 +15,8 @@ public class AfterLoginMainFrameController {
         MainConn.logOut();
         Main.initMainFrameBeforeLogin();
     }
+
+    public void onClickAddCollection() {
+        Main.addCollection();
+    }
 }

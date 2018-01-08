@@ -8,14 +8,14 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.AfterLoginMainFrameController">
    <top>
-      <MenuBar prefHeight="25.0" BorderPane.alignment="CENTER">
+      <MenuBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="|||">
             <items>
-              <MenuItem mnemonicParsing="false" text="Add Collection" />
+              <MenuItem mnemonicParsing="false" text="Add Collection" onAction="#onClickAddCollection" />
                   <MenuItem mnemonicParsing="false" text="Edit Profile" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Sign Out" onAction="#onClickSignOut" />
+                  <MenuItem mnemonicParsing="false" onAction="#onClickSignOut" text="Sign Out" />
             </items>
           </Menu>
         </menus>
