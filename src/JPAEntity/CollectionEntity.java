@@ -1,14 +1,17 @@
 package JPAEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "collection", schema = "public", catalog = "khgmqurw")
 public class CollectionEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idcollection;
+
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="iduser")
+    private UserEntity userEntity;
 
     @Id
     @Column(name = "idcollection")
@@ -18,6 +21,15 @@ public class CollectionEntity {
 
     public void setIdcollection(int idcollection) {
         this.idcollection = idcollection;
+    }
+
+
+    public UserEntity getUserEntity(){
+        return userEntity;
+    }
+
+    public void setUserEntity(UserEntity userEntity){
+        this.userEntity = userEntity;
     }
 
     @Override

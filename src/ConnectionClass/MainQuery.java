@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 import java.util.List;
 
-public class MainConn {
+public class MainQuery {
 
 
     static EntityManager initialConnection() {

@@ -5,6 +5,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "contact", schema = "public", catalog = "khgmqurw")
 public class ContactEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idcontact;
     private String phonenumber;
     private String email;

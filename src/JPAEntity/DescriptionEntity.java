@@ -5,8 +5,21 @@ import javax.persistence.*;
 @Entity
 @Table(name = "description", schema = "public", catalog = "khgmqurw")
 public class DescriptionEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int iddescription;
+    private String title;
     private String description;
+
+    @Basic
+    @Column(name = "title")
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     @Id
     @Column(name = "iddescription")

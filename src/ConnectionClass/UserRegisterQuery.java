@@ -3,13 +3,12 @@ package ConnectionClass;
 import JPAEntity.UserEntity;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
 
-public class RegisterConnControler {
+public class UserRegisterQuery {
 
     public static void addUser(String email, String password){
 
-        EntityManager entityManager = MainConn.initialConnection();
+        EntityManager entityManager = MainQuery.initialConnection();
         entityManager.getTransaction().begin();
 
         UserEntity userEntity = new UserEntity();
@@ -20,7 +19,7 @@ public class RegisterConnControler {
         entityManager.persist(userEntity);
         entityManager.getTransaction().commit();
 
-        MainConn.closeConnection(entityManager);
+        MainQuery.closeConnection(entityManager);
 
     }
 

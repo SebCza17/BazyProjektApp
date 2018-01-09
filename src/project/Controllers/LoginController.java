@@ -1,10 +1,6 @@
 package project.Controllers;
 
-import ConnectionClass.MainConn;
-import JPAEntity.UserEntity;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
-import javafx.event.ActionEvent;
+import ConnectionClass.MainQuery;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -12,7 +8,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 import project.Main;
 
 import java.util.Objects;
@@ -48,7 +43,7 @@ public class LoginController {
     private boolean validation() {
         if (!Objects.equals(PassField.getText(), "")) {
             if (!Objects.equals(EmailField.getText(), "")) {
-                if(MainConn.checkLogin(EmailField.getText(), PassField.getText())){
+                if(MainQuery.checkLogin(EmailField.getText(), PassField.getText())){
                     ErrorLabel.setText("Success!");
                     ErrorLabel.setTextFill(Color.web("Green"));
                     System.out.println("all ok");

@@ -1,6 +1,6 @@
 package project;
 
-import ConnectionClass.MainConn;
+import ConnectionClass.MainQuery;
 import JPAEntity.UserEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -42,7 +42,7 @@ public class Main extends Application {
             primaryStage.show();
 
             initLoginOrRegister();
-            
+
         } catch (IOException e){
             e.printStackTrace();
         }
@@ -149,7 +149,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 
-       MainConn.test();
+       MainQuery.test();
 
         launch(args);
     }
