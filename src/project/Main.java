@@ -20,6 +20,7 @@ public class Main extends Application {
     private static BorderPane FrameBeforeLogin;
     private static BorderPane FrameAfterLogin;
     private static GridPane LoginOrRegister;
+    private static GridPane MyProfile;
 
     public static UserEntity userEntity = null;
 
@@ -74,6 +75,19 @@ public class Main extends Application {
         }catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void initMyProfile() {
+       try{ FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("FXML/MyProfile.fxml"));
+        MyProfile = loader.load();
+
+        FrameAfterLogin.setCenter(MyProfile);
+
+    }catch (IOException e) {
+        e.printStackTrace();
+    }
+
     }
 
     public static void showRegister(){

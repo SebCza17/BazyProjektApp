@@ -13,7 +13,7 @@
           <Menu mnemonicParsing="false" text="|||">
             <items>
               <MenuItem mnemonicParsing="false" text="Add Collection" onAction="#onClickAddCollection" />
-                  <MenuItem mnemonicParsing="false" text="Edit Profile" />
+                  <MenuItem mnemonicParsing="false" text="My Profile" onAction="#onClickMyProfile" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" onAction="#onClickSignOut" text="Sign Out" />
             </items>

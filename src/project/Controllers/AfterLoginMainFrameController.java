@@ -16,4 +16,8 @@ public class AfterLoginMainFrameController {
     public void onClickAddCollection() {
         Main.addCollection();
     }
+
+    public void onClickMyProfile() {
+        Main.initMyProfile();
+    }
 }
