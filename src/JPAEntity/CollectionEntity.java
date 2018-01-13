@@ -8,9 +8,7 @@ public class CollectionEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idcollection;
-    @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="iduser")
-    private UserEntity userEntity;
+    private int idUser;
     private int idlocation;
     private int iddescription;
 
@@ -44,12 +42,14 @@ public class CollectionEntity {
         this.iddescription = iddescription;
     }
 
-    public UserEntity getUserEntity(){
-        return userEntity;
+    @Basic
+    @Column(name = "iduser")
+    public int getIdUser() {
+        return idUser;
     }
 
-    public void setUserEntity(UserEntity userEntity){
-        this.userEntity = userEntity;
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
     }
 
     @Override

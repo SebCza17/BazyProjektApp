@@ -1,14 +1,26 @@
 package project.Controllers;
 
 import ConnectionClass.MainQuery;
+import JPAEntity.CollectionEntity;
+import JPAEntity.DescriptionEntity;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import project.Main;
+
+import java.util.List;
+
+import static ConnectionClass.CollectionQuery.getCollection;
+import static ConnectionClass.CollectionQuery.getCollectionDescription;
 
 
 public class AfterLoginMainFrameController {
 
     public VBox vBox;
+
+    public void initialize(){
+        showCollection();
+    }
 
     public void onClickSignOut(ActionEvent actionEvent) {
 
@@ -22,5 +34,19 @@ public class AfterLoginMainFrameController {
 
     public void onClickMyProfile() {
         Main.initMyProfile();
+    }
+
+    private void showCollection() {
+
+        List<CollectionEntity> collectionEntities = getCollection();
+
+        for (int i = 0; i < collectionEntities.size(); i++) {
+
+            CollectionEntity collectionEntity = collectionEntities.get(i);
+            //DescriptionEntity descriptionEntity = getCollectionDescription(collectionEntity.getIddescription());
+
+            Label label = new Label(i + 1 + " " + getCollectionDescription(collectionEntity.getIddescription()).getTitle());
+            vBox.getChildren().add(label);
+        }
     }
 }
