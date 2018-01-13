@@ -8,6 +8,8 @@ public class LocationEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idlocation;
+    private int idcontact;
+    private int iddescription;
 
     @Id
     @Column(name = "idlocation")
@@ -17,6 +19,26 @@ public class LocationEntity {
 
     public void setIdlocation(int idlocation) {
         this.idlocation = idlocation;
+    }
+
+    @Basic
+    @Column(name = "idcontact")
+    public int getIdcontact() {
+        return idcontact;
+    }
+
+    public void setIdcontact(int idcontact) {
+        this.idcontact = idcontact;
+    }
+
+    @Basic
+    @Column(name = "iddescription")
+    public int getIddescription() {
+        return iddescription;
+    }
+
+    public void setIddescription(int iddescription) {
+        this.iddescription = iddescription;
     }
 
     @Override
