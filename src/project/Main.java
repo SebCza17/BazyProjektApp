@@ -163,7 +163,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 
-       MainQuery.test();
+       MainQuery.testConnection();
 
         launch(args);
     }

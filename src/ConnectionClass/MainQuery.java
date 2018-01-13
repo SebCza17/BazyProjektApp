@@ -17,15 +17,23 @@ public class MainQuery {
         return entityManagerFactory.createEntityManager();
     }
 
-   public static void test(){
 
-       EntityManager entityManager = initialConnection();
+    public static boolean testConnection() {
 
+        EntityManager entityManager = null;
+        try {
+            entityManager = initialConnection();
+        } catch (Exception e) {
+            System.out.println("Cannot Connection to Database");
+            return false;
+        } finally {
+            if (entityManager != null) {
+                closeConnection(entityManager);
+            }
 
-
-       closeConnection(entityManager);
-
-   }
+        }
+        return true;
+    }
 
    public static boolean checkEmail(String email){
        EntityManager entityManager = initialConnection();

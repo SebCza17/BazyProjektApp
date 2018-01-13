@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.AfterLoginMainFrameController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.AfterLoginMainFrameController">
    <top>
       <MenuBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="|||">
             <items>
-              <MenuItem mnemonicParsing="false" text="Add Collection" onAction="#onClickAddCollection" />
-                  <MenuItem mnemonicParsing="false" text="My Profile" onAction="#onClickMyProfile" />
+              <MenuItem mnemonicParsing="false" onAction="#onClickAddCollection" text="Add Collection" />
+                  <MenuItem mnemonicParsing="false" onAction="#onClickMyProfile" text="My Profile" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" onAction="#onClickSignOut" text="Sign Out" />
             </items>
@@ -21,4 +24,7 @@
         </menus>
       </MenuBar>
    </top>
+   <bottom>
+      <VBox fx:id="vBox" prefHeight="579.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+   </bottom>
 </BorderPane>
