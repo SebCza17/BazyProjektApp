@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Cursor;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
+import project.Main;
 
 import java.awt.event.MouseEvent;
 import java.beans.EventHandler;
@@ -37,6 +38,7 @@ public class CollectionViewController {
                 @Override
                 public void handle(javafx.scene.input.MouseEvent event) {
                     System.out.println("test" + collectionEntity.getIdcollection());
+                    //Main.showCollectionData();
                 }
             });
             vBox.getChildren().add(label);

@@ -22,6 +22,7 @@ public class Main extends Application {
     private static GridPane LoginOrRegister;
     private static GridPane MyProfile;
     private static AnchorPane CollectionView;
+    private static AnchorPane CollectionData;
 
     public static UserEntity userEntity = null;
 
@@ -128,6 +129,47 @@ public class Main extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void showCollectionData(){
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/CollectionData.fxml"));
+            CollectionData = loader.load();
+
+            Stage CollectionDataStage = new Stage();
+            CollectionDataStage.initModality(Modality.WINDOW_MODAL);
+            CollectionDataStage.initOwner(primaryStage);
+            Scene scene = new Scene(CollectionData);
+            CollectionDataStage.setScene(scene);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static void showAddWork(){
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/AddWork.fxml"));
+            Accordion page = loader.load();
+
+            Stage newWork = new Stage();
+            newWork.initModality(Modality.WINDOW_MODAL);
+            newWork.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            newWork.setScene(scene);
+            //newWork.setMinWidth(506);
+            //newWork.setMinHeight(379);
+
+            newWork.showAndWait();
+
+
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+
     }
 
     public static void showLogin(){
