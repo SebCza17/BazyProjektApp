@@ -135,13 +135,15 @@ public class Main extends Application {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("FXML/CollectionData.fxml"));
-            CollectionData = loader.load();
+            AnchorPane page = loader.load();
 
-            Stage CollectionDataStage = new Stage();
-            CollectionDataStage.initModality(Modality.WINDOW_MODAL);
-            CollectionDataStage.initOwner(primaryStage);
-            Scene scene = new Scene(CollectionData);
-            CollectionDataStage.setScene(scene);
+            Stage collectionDataStage = new Stage();
+            //collectionDataStage.initModality(Modality.WINDOW_MODAL);
+            collectionDataStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            collectionDataStage.setScene(scene);
+
+            collectionDataStage.showAndWait();
 
         } catch (IOException e) {
             e.printStackTrace();

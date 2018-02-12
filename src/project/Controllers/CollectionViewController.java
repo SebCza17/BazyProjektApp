@@ -38,7 +38,7 @@ public class CollectionViewController {
                 @Override
                 public void handle(javafx.scene.input.MouseEvent event) {
                     System.out.println("test" + collectionEntity.getIdcollection());
-                    //Main.showCollectionData();
+                    Main.showCollectionData();
                 }
             });
             vBox.getChildren().add(label);

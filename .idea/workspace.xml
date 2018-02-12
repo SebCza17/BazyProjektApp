@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="asd">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/project/FXML/CollectionData.fxml" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/FXML/CollectionData.fxml" afterPath="$PROJECT_DIR$/src/project/FXML/CollectionData.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Main.java" afterPath="$PROJECT_DIR$/src/project/Main.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -163,8 +164,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/project/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="163" column="14" lean-forward="false" selection-start-line="163" selection-start-column="14" selection-end-line="163" selection-end-column="14" />
+            <state relative-caret-position="196">
+              <caret line="140" column="14" lean-forward="false" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
               <folding>
                 <element signature="method#start#0;class#Main#0" expanded="false" />
                 <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
@@ -172,6 +173,8 @@
                 <element signature="method#initMyProfile#0;class#Main#0" expanded="false" />
                 <element signature="method#initCollectionView#0;class#Main#0" expanded="false" />
                 <element signature="method#showRegister#0;class#Main#0" expanded="false" />
+                <element signature="method#showLogin#0;class#Main#0" expanded="false" />
+                <element signature="method#addCollection#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -183,8 +186,47 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="54" />
+            <state relative-caret-position="153">
+              <caret line="9" column="136" lean-forward="false" selection-start-line="9" selection-start-column="136" selection-end-line="9" selection-end-column="136" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionDataController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+              <folding>
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#154#155#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AfterLoginMainFrameController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddWork.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/FXML/AddWork.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -193,8 +235,8 @@
       <file leaf-file-name="CollectionViewController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="232">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#556#557#0" expanded="true" />
@@ -204,10 +246,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BeforeLoginMainFrameController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/Controllers/BeforeLoginMainFrameController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/Controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="283">
               <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding />
             </state>
@@ -219,19 +271,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
               <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyProfile.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/FXML/MyProfile.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="31" column="109" lean-forward="false" selection-start-line="31" selection-start-column="109" selection-end-line="31" selection-end-column="109" />
               <folding />
             </state>
           </provider>
@@ -255,8 +294,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -316,9 +355,10 @@
         <option value="$PROJECT_DIR$/src/project/FXML/MyProfile.fxml" />
         <option value="$PROJECT_DIR$/src/project/FXML/CollectionView.fxml" />
         <option value="$PROJECT_DIR$/src/project/Controllers/AddCollectionController.java" />
-        <option value="$PROJECT_DIR$/src/project/FXML/CollectionData.fxml" />
         <option value="$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java" />
         <option value="$PROJECT_DIR$/src/project/Main.java" />
+        <option value="$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java" />
+        <option value="$PROJECT_DIR$/src/project/FXML/CollectionData.fxml" />
       </list>
     </option>
   </component>
@@ -369,6 +409,13 @@
               <item name="BazyProjektApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BazyProjektApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BazyProjektApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BazyProjektApp" type="b2602c69:ProjectViewProjectNode" />
@@ -766,11 +813,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518473313867</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="asd">
+      <created>1518477679108</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1518477679108</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74384000" />
+    <option name="totallyTimeSpent" value="75794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -898,7 +952,8 @@
     <MESSAGE value="Auto close to addcollection" />
     <MESSAGE value="Lekki repair tego co zepsul seba (collection sie nie wyswietla lololo)" />
     <MESSAGE value="odswiezanie add collection" />
-    <option name="LAST_COMMIT_MESSAGE" value="odswiezanie add collection" />
+    <MESSAGE value="asd" />
+    <option name="LAST_COMMIT_MESSAGE" value="asd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -911,17 +966,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/project/FXML/BeforeLoginMainFrame.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/BeforeLoginMainSceneController.java" />
     <entry file="file://$PROJECT_DIR$/src/project/FXML/test.fxml" />
     <entry file="file://$PROJECT_DIR$/src/project/Controllers/MainScene.java" />
     <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
@@ -1070,14 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/BeforeLoginMainFrameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Controllers/LoginOrRegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1143,14 +1179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ConnectionClass/UserRegisterQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1180,14 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Controllers/AddCollectionController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1196,21 +1216,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/FXML/CollectionData.fxml">
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/BeforeLoginMainFrameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/FXML/AddWork.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="54" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="232">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#556#557#0" expanded="true" />
@@ -1219,10 +1266,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/FXML/CollectionData.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="136" lean-forward="false" selection-start-line="9" selection-start-column="136" selection-end-line="9" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="163" column="14" lean-forward="false" selection-start-line="163" selection-start-column="14" selection-end-line="163" selection-end-column="14" />
+        <state relative-caret-position="196">
+          <caret line="140" column="14" lean-forward="false" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
           <folding>
             <element signature="method#start#0;class#Main#0" expanded="false" />
             <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
@@ -1230,6 +1299,8 @@
             <element signature="method#initMyProfile#0;class#Main#0" expanded="false" />
             <element signature="method#initCollectionView#0;class#Main#0" expanded="false" />
             <element signature="method#showRegister#0;class#Main#0" expanded="false" />
+            <element signature="method#showLogin#0;class#Main#0" expanded="false" />
+            <element signature="method#addCollection#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
