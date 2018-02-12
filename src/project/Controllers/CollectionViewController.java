@@ -2,9 +2,13 @@ package project.Controllers;
 
 import JPAEntity.CollectionEntity;
 import javafx.fxml.FXML;
+import javafx.scene.Cursor;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 
+import java.awt.event.MouseEvent;
+import java.beans.EventHandler;
+import java.util.EventListener;
 import java.util.List;
 
 import static ConnectionClass.CollectionQuery.getCollection;
@@ -25,10 +29,21 @@ public class CollectionViewController {
         for (int i = 0; i < collectionEntities.size(); i++) {
 
             CollectionEntity collectionEntity = collectionEntities.get(i);
-            //DescriptionEntity descriptionEntity = getCollectionDescription(collectionEntity.getIddescription());
+
 
             Label label = new Label(i + 1 + " " + getCollectionDescription(collectionEntity.getIddescription()).getTitle());
+            label.setCursor(Cursor.HAND);
+            label.setOnMouseClicked(new javafx.event.EventHandler<javafx.scene.input.MouseEvent>() {
+                @Override
+                public void handle(javafx.scene.input.MouseEvent event) {
+                    System.out.println("test" + collectionEntity.getIdcollection());
+                }
+            });
             vBox.getChildren().add(label);
         }
+    }
+
+    private void onClickLabel(){
+
     }
 }
