@@ -9,6 +9,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.util.Duration;
 import javafx.stage.Stage;
+import project.Main;
 
 import java.util.Objects;
 
@@ -32,7 +33,7 @@ public class AddCollectionController {
                         PhoneNField.getText(), EmailField.getText(), AdresField.getText(),
                         TitleLocationField.getText(), DescriptionLocationArea.getText(),
                         TitleCollectionField.getText(), DescriptionCollectionArea.getText());
-               // showCollection();
+                        Main.initMainFrameAfterLogin();
                 stageClose(actionEvent);
             } else System.out.println("Błąd title collection");
         } else System.out.println("Błąd adres");
