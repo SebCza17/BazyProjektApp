@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.LoginOrRegisterController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.MyProfileController">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -29,7 +29,7 @@
         <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
          <children>
             <Button layoutX="133.0" layoutY="14.0" mnemonicParsing="false" text="Edit Profile" />
-            <Button layoutX="211.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="211.0" layoutY="14.0" mnemonicParsing="false" text="Back" onAction="#onClickBack" />
          </children></Pane>
         <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
          <children>

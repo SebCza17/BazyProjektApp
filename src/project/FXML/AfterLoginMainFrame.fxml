@@ -25,6 +25,6 @@
       </MenuBar>
    </top>
    <bottom>
-      <VBox fx:id="vBox" prefHeight="579.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+      <!--<VBox fx:id="vBox" prefHeight="579.0" prefWidth="800.0" BorderPane.alignment="CENTER" /> -->
    </bottom>
 </BorderPane>

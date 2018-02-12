@@ -16,11 +16,6 @@ import static ConnectionClass.CollectionQuery.getCollectionDescription;
 
 public class AfterLoginMainFrameController {
 
-    public VBox vBox;
-
-    public void initialize(){
-        showCollection();
-    }
 
     public void onClickSignOut(ActionEvent actionEvent) {
 
@@ -36,17 +31,5 @@ public class AfterLoginMainFrameController {
         Main.initMyProfile();
     }
 
-    private void showCollection() {
 
-        List<CollectionEntity> collectionEntities = getCollection();
-
-        for (int i = 0; i < collectionEntities.size(); i++) {
-
-            CollectionEntity collectionEntity = collectionEntities.get(i);
-            //DescriptionEntity descriptionEntity = getCollectionDescription(collectionEntity.getIddescription());
-
-            Label label = new Label(i + 1 + " " + getCollectionDescription(collectionEntity.getIddescription()).getTitle());
-            vBox.getChildren().add(label);
-        }
-    }
 }

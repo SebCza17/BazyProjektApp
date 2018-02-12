@@ -21,6 +21,7 @@ public class Main extends Application {
     private static BorderPane FrameAfterLogin;
     private static GridPane LoginOrRegister;
     private static GridPane MyProfile;
+    private static AnchorPane CollectionView;
 
     public static UserEntity userEntity = null;
 
@@ -59,6 +60,9 @@ public class Main extends Application {
             Scene scene = new Scene(FrameAfterLogin);
             primaryStage.setScene(scene);
             primaryStage.show();
+
+            initCollectionView();
+
         } catch (IOException e){
             e.printStackTrace();
         }
@@ -78,16 +82,27 @@ public class Main extends Application {
     }
 
     public static void initMyProfile() {
-       try{ FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("FXML/MyProfile.fxml"));
-        MyProfile = loader.load();
+         try{ FXMLLoader loader = new FXMLLoader();
+             loader.setLocation(Main.class.getResource("FXML/MyProfile.fxml"));
+             MyProfile = loader.load();
 
-        FrameAfterLogin.setCenter(MyProfile);
+             FrameAfterLogin.setCenter(MyProfile);
 
-    }catch (IOException e) {
-        e.printStackTrace();
+        }catch (IOException e) {
+             e.printStackTrace();
     }
 
+    }
+
+    public static void initCollectionView(){
+        try{ FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/CollectionView.fxml"));
+            CollectionView = loader.load();
+
+            FrameAfterLogin.setCenter(CollectionView);
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void showRegister(){
