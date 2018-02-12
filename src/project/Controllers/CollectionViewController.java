@@ -1,6 +1,7 @@
 package project.Controllers;
 
 import JPAEntity.CollectionEntity;
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 
@@ -27,7 +28,7 @@ public class CollectionViewController {
             //DescriptionEntity descriptionEntity = getCollectionDescription(collectionEntity.getIddescription());
 
             Label label = new Label(i + 1 + " " + getCollectionDescription(collectionEntity.getIddescription()).getTitle());
-           // vBox.getChildren().add(label);
+            vBox.getChildren().add(label);
         }
     }
 }
