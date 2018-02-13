@@ -1,5 +1,6 @@
 package ConnectionClass;
 
+import JPAEntity.DescriptionEntity;
 import JPAEntity.UserEntity;
 import project.Main;
 
@@ -65,6 +66,17 @@ public class MainQuery {
            return false;
        }
    }
+    public static DescriptionEntity getDescription(int i){
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        Query query = entityManager.createQuery("SELECT s from DescriptionEntity s WHERE s.iddescription =" + i);
+        List<DescriptionEntity> descriptionEntities = query.getResultList();
+        DescriptionEntity descriptionEntity = descriptionEntities.get(0);
+
+        MainQuery.closeConnection(entityManager);
+
+        return descriptionEntity;
+    }
 
    public static void logOut(){
        Main.userEntity = null;

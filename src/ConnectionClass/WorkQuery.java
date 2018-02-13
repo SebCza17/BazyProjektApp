@@ -5,7 +5,9 @@ import project.Controllers.CollectionDataController;
 import project.Main;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import java.util.Date;
+import java.util.List;
 
 public class WorkQuery {
     public static void addWork(
@@ -18,8 +20,7 @@ public class WorkQuery {
 
             //Work Data
             String year,
-            String epoch)
-    {
+            String epoch) {
         EntityManager entityManager = MainQuery.initialConnection();
         entityManager.getTransaction().begin();
 
@@ -57,13 +58,13 @@ public class WorkQuery {
         entityManager.persist(contactEntity);
         entityManager.persist(authorDescriptionEntity);
         entityManager.persist(workDescriptionEntity);
- //       entityManager.persist(workdataEntity);
+        //       entityManager.persist(workdataEntity);
         entityManager.getTransaction().commit();
 
         //STEP 2.0
         entityManager.getTransaction().begin();
 
-        AuthorEntity authorEntity= new AuthorEntity();
+        AuthorEntity authorEntity = new AuthorEntity();
         authorEntity.setIdContact(contactEntity.getIdcontact());
         authorEntity.setIdDescription(authorDescriptionEntity.getIddescription());
         authorEntity.setIdPersonalData(personaldataEntity.getIdpersonaldata());
@@ -85,7 +86,7 @@ public class WorkQuery {
         //STEP 4
         entityManager.getTransaction().begin();
 
-        WorkdataEntity workdataEntity= new WorkdataEntity();
+        WorkdataEntity workdataEntity = new WorkdataEntity();
         workdataEntity.setIdWork(workEntity.getIdwork());
         workdataEntity.setYear(year);
         workdataEntity.setEpoch(epoch);
@@ -97,6 +98,16 @@ public class WorkQuery {
         MainQuery.closeConnection(entityManager);
 
 
+    }
 
+    public static List<WorkEntity> getWork() {
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        Query query = entityManager.createQuery("SELECT s from WorkEntity s WHERE s.idcollection =" + CollectionDataController.collectionEntity.getIdcollection());
+        List<WorkEntity> workEntities = query.getResultList();
+
+        MainQuery.closeConnection(entityManager);
+
+        return workEntities;
     }
 }
