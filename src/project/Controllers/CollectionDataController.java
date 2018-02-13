@@ -7,7 +7,7 @@ import project.Main;
 public class CollectionDataController {
 
     public VBox vBox;
-    CollectionEntity collectionEntity = Main.collectionEntity;
+    public static CollectionEntity collectionEntity = Main.collectionEntity;
 
     public void initialize(){
         System.out.println(collectionEntity.getIdcollection());

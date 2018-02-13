@@ -5,6 +5,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "work", schema = "public", catalog = "khgmqurw")
 public class WorkEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idwork;
     private int idcollection;
     private int idauthor;

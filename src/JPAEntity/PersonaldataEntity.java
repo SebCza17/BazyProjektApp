@@ -6,12 +6,13 @@ import java.sql.Date;
 @Entity
 @Table(name = "personaldata", schema = "public", catalog = "khgmqurw")
 public class PersonaldataEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idpersonaldata;
     private String name;
     private String surname;
-    private Short age;
-    private Date born;
-    private Date death;
+    private String born;
+    private String death;
 
     @Id
     @Column(name = "idpersonaldata")
@@ -44,32 +45,22 @@ public class PersonaldataEntity {
     }
 
     @Basic
-    @Column(name = "age")
-    public Short getAge() {
-        return age;
-    }
-
-    public void setAge(Short age) {
-        this.age = age;
-    }
-
-    @Basic
     @Column(name = "born")
-    public Date getBorn() {
+    public String getBorn() {
         return born;
     }
 
-    public void setBorn(Date born) {
+    public void setBorn(String born) {
         this.born = born;
     }
 
     @Basic
     @Column(name = "death")
-    public Date getDeath() {
+    public String getDeath() {
         return death;
     }
 
-    public void setDeath(Date death) {
+    public void setDeath(String death) {
         this.death = death;
     }
 
@@ -83,7 +74,6 @@ public class PersonaldataEntity {
         if (idpersonaldata != that.idpersonaldata) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (surname != null ? !surname.equals(that.surname) : that.surname != null) return false;
-        if (age != null ? !age.equals(that.age) : that.age != null) return false;
         if (born != null ? !born.equals(that.born) : that.born != null) return false;
         if (death != null ? !death.equals(that.death) : that.death != null) return false;
 
@@ -95,7 +85,6 @@ public class PersonaldataEntity {
         int result = idpersonaldata;
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (surname != null ? surname.hashCode() : 0);
-        result = 31 * result + (age != null ? age.hashCode() : 0);
         result = 31 * result + (born != null ? born.hashCode() : 0);
         result = 31 * result + (death != null ? death.hashCode() : 0);
         return result;

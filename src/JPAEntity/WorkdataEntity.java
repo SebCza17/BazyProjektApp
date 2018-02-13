@@ -8,15 +8,27 @@ public class WorkdataEntity {
     private String title;
     private String year;
     private String epoch;
-    private int id;
+    private int idWork;
+    private int idDescription;
 
     @Id
-    public int getId() {
-        return id;
+    @Column(name = "idwork")
+    public int getIdWork() {
+        return idWork;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdWork(int idWork) {
+        this.idWork = idWork;
+    }
+
+    @Basic
+    @Column(name = "iddescription")
+    public int getIdDescription() {
+        return idDescription;
+    }
+
+    public void setIdDescription(int idDescription) {
+        this.idDescription = idDescription;
     }
 
     @Basic
@@ -70,6 +82,4 @@ public class WorkdataEntity {
         result = 31 * result + (epoch != null ? epoch.hashCode() : 0);
         return result;
     }
-
-
 }

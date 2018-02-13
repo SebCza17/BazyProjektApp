@@ -5,7 +5,10 @@ import javax.persistence.*;
 @Entity
 @Table(name = "author", schema = "public", catalog = "khgmqurw")
 public class AuthorEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idauthor;
+
     private int idPersonalData;
     private int idContact;
     private int idDescription;

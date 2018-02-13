@@ -1,16 +1,17 @@
 package ConnectionClass;
 
 import JPAEntity.*;
+import project.Controllers.CollectionDataController;
 import project.Main;
 
 import javax.persistence.EntityManager;
 import java.util.Date;
 
 public class WorkQuery {
-    public static void addCollection(
+    public static void addWork(
             //Author
-            String name, String surname, Short age, java.sql.Date born, java.sql.Date death,  //PersonalData
-            String phoneNumber, String email, String address,    //Contact
+            String name, String surname, String born, String death,  //AuthorPersonalData
+            String phoneNumber, String email, String address,    //Author Contact
             String authorTitleDesc, String authorDesc,   //Author Description
             //Work Description
             String workTitleDesc, String workDesc,
@@ -29,7 +30,6 @@ public class WorkQuery {
         PersonaldataEntity personaldataEntity = new PersonaldataEntity();
         personaldataEntity.setName(name);
         personaldataEntity.setSurname(surname);
-        personaldataEntity.setAge(age);
         personaldataEntity.setBorn(born);
         if (death != null) {
             personaldataEntity.setDeath(death);
@@ -53,6 +53,7 @@ public class WorkQuery {
 //            workdataEntity.setEpoch(epoch);
 
 
+        entityManager.persist(personaldataEntity);
         entityManager.persist(contactEntity);
         entityManager.persist(authorDescriptionEntity);
         entityManager.persist(workDescriptionEntity);
@@ -74,18 +75,23 @@ public class WorkQuery {
         entityManager.getTransaction().begin();
 
         WorkEntity workEntity = new WorkEntity();
-        //workEntity.setIdcollection(Main.userEntity.);
         workEntity.setIdauthor(authorEntity.getIdauthor());
+        workEntity.setIdcollection(CollectionDataController.collectionEntity.getIdcollection());
 
-        //WorkData dupa
+
+        entityManager.persist(workEntity);
+        entityManager.getTransaction().commit();
+
+        //STEP 4
+        entityManager.getTransaction().begin();
+
         WorkdataEntity workdataEntity= new WorkdataEntity();
-        workdataEntity.setId(workEntity.getIdwork());
+        workdataEntity.setIdWork(workEntity.getIdwork());
         workdataEntity.setYear(year);
         workdataEntity.setEpoch(epoch);
-
+        workdataEntity.setIdDescription(workDescriptionEntity.getIddescription());
 
         entityManager.persist(workdataEntity);
-        entityManager.persist(workEntity);
         entityManager.getTransaction().commit();
 
         MainQuery.closeConnection(entityManager);
