@@ -23,7 +23,7 @@ public class WorkQuery {
         entityManager.getTransaction().begin();
 
 
-        //STEP 1    dupa
+        //STEP 1
 
         //AuthorPersonalData
         PersonaldataEntity personaldataEntity = new PersonaldataEntity();
