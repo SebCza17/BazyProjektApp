@@ -5,6 +5,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.util.Duration;
@@ -24,10 +25,13 @@ public class AddCollectionController {
     public TextArea DescriptionLocationArea;
     public TextField TitleCollectionField; //Important!
     public TextArea DescriptionCollectionArea;
+    public Button AddButton;
 
     public void onClickAdd(ActionEvent actionEvent) {
         if (!Objects.equals(AdresField.getText(), "")) {
             if (!Objects.equals(TitleCollectionField.getText(), "")) {
+
+                AddButton.setDisable(true);
 
                 CollectionQuery.addCollection(
                         PhoneNField.getText(), EmailField.getText(), AdresField.getText(),

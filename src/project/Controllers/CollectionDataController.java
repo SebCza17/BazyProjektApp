@@ -10,6 +10,7 @@ public class CollectionDataController {
     public static CollectionEntity collectionEntity = Main.collectionEntity;
 
     public void initialize(){
+        collectionEntity = Main.collectionEntity;
         System.out.println(collectionEntity.getIdcollection());
     }
 

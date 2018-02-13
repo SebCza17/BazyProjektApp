@@ -19,7 +19,7 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <TextField fx:id="AuthorNameField" layoutX="14.0" layoutY="14.0" promptText="Name" AnchorPane.leftAnchor="10.0" />
+                                    <TextField fx:id="AuthorNameField" layoutX="14.0" layoutY="14.0" promptText="Name*" AnchorPane.leftAnchor="10.0" />
                                     <TextField fx:id="AuthorSurnameField" layoutX="14.0" layoutY="39.0" promptText="Surname" AnchorPane.leftAnchor="10.0" />
                                      <!--delete -->    <TextField layoutX="14.0" layoutY="64.0" promptText="Age" AnchorPane.leftAnchor="10.0" /> <!--delete -->
                                     <TextField fx:id="AuthorBornField" layoutX="14.0" layoutY="87.0" promptText="Born" AnchorPane.leftAnchor="10.0" />
@@ -58,7 +58,7 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="WorkTitleDescField" layoutX="14.0" layoutY="14.0" promptText="Title" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                  <TextField fx:id="WorkTitleDescField" layoutX="14.0" layoutY="14.0" promptText="Title*" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
                   <TextArea fx:id="WorkDescArea" layoutX="34.6" layoutY="69.6" prefHeight="200.0" prefWidth="340.0" promptText="Description" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="50.0" />
                </children></AnchorPane>
       </content>

@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java" afterPath="$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java" />
-      <change beforePath="$PROJECT_DIR$/src/JPAEntity/AuthorEntity.java" afterPath="$PROJECT_DIR$/src/JPAEntity/AuthorEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/JPAEntity/PersonaldataEntity.java" afterPath="$PROJECT_DIR$/src/JPAEntity/PersonaldataEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/JPAEntity/WorkEntity.java" afterPath="$PROJECT_DIR$/src/JPAEntity/WorkEntity.java" />
       <change beforePath="$PROJECT_DIR$/src/JPAEntity/WorkdataEntity.java" afterPath="$PROJECT_DIR$/src/JPAEntity/WorkdataEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/project/Controllers/AddWorkController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/AddWorkController.java" />
+      <change beforePath="$PROJECT_DIR$/src/project/Controllers/AddCollectionController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/AddCollectionController.java" />
       <change beforePath="$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java" />
+      <change beforePath="$PROJECT_DIR$/src/project/FXML/AddCollection.fxml" afterPath="$PROJECT_DIR$/src/project/FXML/AddCollection.fxml" />
       <change beforePath="$PROJECT_DIR$/src/project/FXML/AddWork.fxml" afterPath="$PROJECT_DIR$/src/project/FXML/AddWork.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -72,7 +69,7 @@
         <item name="khgmqurw: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="author: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+        <item name="collection: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -81,34 +78,7 @@
         <item name="khgmqurw: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="contact: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="khgmqurw@horton.elephantsql.com" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="khgmqurw: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="description: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="khgmqurw@horton.elephantsql.com" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="khgmqurw: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="personaldata: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="khgmqurw@horton.elephantsql.com" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="khgmqurw: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="work: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+        <item name="location: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -169,36 +139,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CollectionViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="WorkQuery.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="66" column="30" lean-forward="false" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+            <state relative-caret-position="211">
+              <caret line="78" column="71" lean-forward="false" selection-start-line="78" selection-start-column="71" selection-end-line="78" selection-end-column="71" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionQuery.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ConnectionClass/CollectionQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionDataController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddCollectionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/Controllers/AddCollectionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddCollection.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/FXML/AddCollection.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="WorkdataEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JPAEntity/WorkdataEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="1003">
+              <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
               <folding>
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddWorkController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+              <folding>
+                <element signature="method#start#0;class#Main#0" expanded="false" />
+                <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
+                <element signature="method#initLoginOrRegister#0;class#Main#0" expanded="false" />
+                <element signature="method#initMyProfile#0;class#Main#0" expanded="false" />
+                <element signature="method#initCollectionView#0;class#Main#0" expanded="false" />
+                <element signature="method#showRegister#0;class#Main#0" expanded="false" />
+                <element signature="method#showLogin#0;class#Main#0" expanded="false" />
+                <element signature="method#addCollection#0;class#Main#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddWorkController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/Controllers/AddWorkController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="395">
@@ -207,6 +249,19 @@
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddWork.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/FXML/AddWork.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="60" column="104" lean-forward="false" selection-start-line="60" selection-start-column="104" selection-end-line="60" selection-end-column="104" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -260,7 +315,6 @@
         <option value="$PROJECT_DIR$/src/JPAEntity/UserEntity.java" />
         <option value="$PROJECT_DIR$/src/JPAEntity/DescriptionEntity.java" />
         <option value="$PROJECT_DIR$/src/JPAEntity/ContactEntity.java" />
-        <option value="$PROJECT_DIR$/src/project/FXML/AddCollection.fxml" />
         <option value="$PROJECT_DIR$/src/ConnectionClass/MainConn.java" />
         <option value="$PROJECT_DIR$/src/project/FXML/EditProfile.fxml" />
         <option value="$PROJECT_DIR$/src/JPAEntity/LocationEntity.java" />
@@ -275,18 +329,19 @@
         <option value="$PROJECT_DIR$/src/project/Controllers/MyProfileController.java" />
         <option value="$PROJECT_DIR$/src/project/FXML/MyProfile.fxml" />
         <option value="$PROJECT_DIR$/src/project/FXML/CollectionView.fxml" />
-        <option value="$PROJECT_DIR$/src/project/Controllers/AddCollectionController.java" />
         <option value="$PROJECT_DIR$/src/project/Main.java" />
         <option value="$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java" />
         <option value="$PROJECT_DIR$/src/project/FXML/CollectionData.fxml" />
-        <option value="$PROJECT_DIR$/src/project/FXML/AddWork.fxml" />
         <option value="$PROJECT_DIR$/src/project/Controllers/AddWorkController.java" />
-        <option value="$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java" />
         <option value="$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java" />
         <option value="$PROJECT_DIR$/src/JPAEntity/AuthorEntity.java" />
         <option value="$PROJECT_DIR$/src/JPAEntity/PersonaldataEntity.java" />
         <option value="$PROJECT_DIR$/src/JPAEntity/WorkEntity.java" />
         <option value="$PROJECT_DIR$/src/JPAEntity/WorkdataEntity.java" />
+        <option value="$PROJECT_DIR$/src/project/FXML/AddWork.fxml" />
+        <option value="$PROJECT_DIR$/src/project/FXML/AddCollection.fxml" />
+        <option value="$PROJECT_DIR$/src/project/Controllers/AddCollectionController.java" />
+        <option value="$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java" />
       </list>
     </option>
   </component>
@@ -796,11 +851,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518521707053</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Simple add work">
+      <created>1518533661633</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1518533661633</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89668000" />
+    <option name="totallyTimeSpent" value="92110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -808,7 +870,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -931,7 +993,9 @@
     <MESSAGE value="asd" />
     <MESSAGE value="Micek Commit" />
     <MESSAGE value="Button AddWork" />
-    <option name="LAST_COMMIT_MESSAGE" value="Button AddWork" />
+    <MESSAGE value="Simple add work" />
+    <MESSAGE value="Mała poprawka błędu w add work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mała poprawka błędu w add work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,81 +1162,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/AddCollectionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/CollectionQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
-            <element signature="method#initLoginOrRegister#0;class#Main#0" expanded="false" />
-            <element signature="method#initMyProfile#0;class#Main#0" expanded="false" />
-            <element signature="method#initCollectionView#0;class#Main#0" expanded="false" />
-            <element signature="method#showRegister#0;class#Main#0" expanded="false" />
-            <element signature="method#showLogin#0;class#Main#0" expanded="false" />
-            <element signature="method#addCollection#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/FXML/EditProfile.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/FXML/AddWork.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1067">
-          <caret line="71" column="108" lean-forward="false" selection-start-line="71" selection-start-column="108" selection-end-line="71" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/FXML/AddCollection.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="169" lean-forward="true" selection-start-line="9" selection-start-column="169" selection-end-line="9" selection-end-column="169" />
           <folding />
         </state>
       </provider>
@@ -1236,14 +1229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="66" column="30" lean-forward="false" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.workdata">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1268,30 +1253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.work">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JPAEntity/WorkdataEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Controllers/AddWorkController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -1299,6 +1260,109 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="method#start#0;class#Main#0" expanded="false" />
+            <element signature="method#initMainFrameBeforeLogin#0;class#Main#0" expanded="false" />
+            <element signature="method#initLoginOrRegister#0;class#Main#0" expanded="false" />
+            <element signature="method#initMyProfile#0;class#Main#0" expanded="false" />
+            <element signature="method#initCollectionView#0;class#Main#0" expanded="false" />
+            <element signature="method#showRegister#0;class#Main#0" expanded="false" />
+            <element signature="method#showLogin#0;class#Main#0" expanded="false" />
+            <element signature="method#addCollection#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/FXML/AddWork.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="60" column="104" lean-forward="false" selection-start-line="60" selection-start-column="104" selection-end-line="60" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JPAEntity/WorkdataEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+          <folding>
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/FXML/AddCollection.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/AddCollectionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.work">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/CollectionQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="78" column="71" lean-forward="false" selection-start-line="78" selection-start-column="71" selection-end-line="78" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
