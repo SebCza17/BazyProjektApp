@@ -39,8 +39,8 @@ public class AddCollectionController {
                         TitleCollectionField.getText(), DescriptionCollectionArea.getText());
                         Main.initMainFrameAfterLogin();
                 stageClose(actionEvent);
-            } else System.out.println("Błąd title collection");
-        } else System.out.println("Błąd adres");
+            } else System.out.println("Error title collection");
+        } else System.out.println("Error addrese");
     }
 
     private void stageClose(ActionEvent actionEvent){

@@ -69,7 +69,7 @@
                <children>
                   <TextField fx:id="WorkYearField" layoutX="14.0" layoutY="14.0" promptText="Year" AnchorPane.leftAnchor="10.0" />
                   <TextField fx:id="WorkEpochField" layoutX="14.0" layoutY="39.0" promptText="Epoch" AnchorPane.leftAnchor="10.0" />
-                  <Button layoutX="397.0" layoutY="285.0" mnemonicParsing="false" text="Add" onAction="#onClickAdd" />
+                  <Button fx:id="AddButton" layoutX="397.0" layoutY="285.0" mnemonicParsing="false" text="Add" onAction="#onClickAdd" />
                </children></AnchorPane>
       </content>
     </TitledPane>
