@@ -8,6 +8,16 @@ public class WorkdataEntity {
     private String title;
     private String year;
     private String epoch;
+    private int id;
+
+    @Id
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     @Basic
     @Column(name = "title")
@@ -61,14 +71,5 @@ public class WorkdataEntity {
         return result;
     }
 
-    private String id;
 
-    @Id
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 }

@@ -1,6 +1,7 @@
 package project;
 
 import ConnectionClass.MainQuery;
+import JPAEntity.CollectionEntity;
 import JPAEntity.UserEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -25,6 +26,7 @@ public class Main extends Application {
     private static AnchorPane CollectionData;
 
     public static UserEntity userEntity = null;
+    public static CollectionEntity collectionEntity = null;
 
     @Override
     public void start(Stage primaryStage) throws Exception {

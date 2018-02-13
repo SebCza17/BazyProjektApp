@@ -37,7 +37,10 @@ public class CollectionViewController {
             label.setOnMouseClicked(new javafx.event.EventHandler<javafx.scene.input.MouseEvent>() {
                 @Override
                 public void handle(javafx.scene.input.MouseEvent event) {
-                    System.out.println("test" + collectionEntity.getIdcollection());
+                    int idCollection = collectionEntity.getIdcollection();
+
+                    System.out.println("test" + idCollection);
+                    Main.collectionEntity = collectionEntity;
                     Main.showCollectionData();
                 }
             });
@@ -45,7 +48,5 @@ public class CollectionViewController {
         }
     }
 
-    private void onClickLabel(){
 
-    }
 }

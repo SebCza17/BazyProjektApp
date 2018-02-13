@@ -1,14 +1,13 @@
 package JPAEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "work", schema = "public", catalog = "khgmqurw")
 public class WorkEntity {
     private int idwork;
+    private int idcollection;
+    private int idauthor;
 
     @Id
     @Column(name = "idwork")
@@ -18,6 +17,26 @@ public class WorkEntity {
 
     public void setIdwork(int idwork) {
         this.idwork = idwork;
+    }
+
+    @Basic
+    @Column(name = "idcollection")
+    public int getIdcollection() {
+        return idcollection;
+    }
+
+    public void setIdcollection(int idcollection) {
+        this.idcollection = idcollection;
+    }
+
+    @Basic
+    @Column(name = "idauthor")
+    public int getIdauthor() {
+        return idauthor;
+    }
+
+    public void setIdauthor(int idauthor) {
+        this.idauthor = idauthor;
     }
 
     @Override
