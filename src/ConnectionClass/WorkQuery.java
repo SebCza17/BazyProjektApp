@@ -23,7 +23,7 @@ public class WorkQuery {
         entityManager.getTransaction().begin();
 
 
-        //STEP 1
+        //STEP 1    dupa
 
         //AuthorPersonalData
         PersonaldataEntity personaldataEntity = new PersonaldataEntity();
@@ -77,7 +77,7 @@ public class WorkQuery {
         //workEntity.setIdcollection(Main.userEntity.);
         workEntity.setIdauthor(authorEntity.getIdauthor());
 
-        //WorkData
+        //WorkData dupa
         WorkdataEntity workdataEntity= new WorkdataEntity();
         workdataEntity.setId(workEntity.getIdwork());
         workdataEntity.setYear(year);
