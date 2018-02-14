@@ -58,6 +58,7 @@ public class UserQuery {
 
                             //          STEP2
         //UserData
+        entityManager.getTransaction().begin();
         UserdataEntity userdataEntity=new UserdataEntity();
         userdataEntity.setId(Main.userEntity.getIduser());
         userdataEntity.setIdPersonalData(personaldataEntity.getIdpersonaldata());
@@ -66,6 +67,9 @@ public class UserQuery {
         //Persist&Commit
         entityManager.persist(userdataEntity);
         entityManager.getTransaction().commit();
+
+
+        MainQuery.closeConnection(entityManager);
 
     }
 

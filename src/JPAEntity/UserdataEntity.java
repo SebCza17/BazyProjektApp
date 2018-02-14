@@ -12,6 +12,7 @@ public class UserdataEntity {
 
 
     @Id
+    @Column(name = "iduser")
     public int getId() {
         return id;
     }
