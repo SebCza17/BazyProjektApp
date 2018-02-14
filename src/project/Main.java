@@ -5,6 +5,7 @@ import JPAEntity.CollectionEntity;
 import JPAEntity.UserEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Accordion;
 import javafx.scene.layout.AnchorPane;
@@ -103,6 +104,8 @@ public class Main extends Application {
             CollectionView = loader.load();
 
             FrameAfterLogin.setCenter(CollectionView);
+            BorderPane.setAlignment(CollectionView, Pos.TOP_LEFT);
+            
         }catch (IOException e) {
             e.printStackTrace();
         }

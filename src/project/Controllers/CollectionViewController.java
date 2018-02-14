@@ -1,26 +1,29 @@
 package project.Controllers;
 
+import ConnectionClass.MainQuery;
 import JPAEntity.CollectionEntity;
 import javafx.fxml.FXML;
 import javafx.scene.Cursor;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import project.Main;
 
-import java.awt.event.MouseEvent;
-import java.beans.EventHandler;
-import java.util.EventListener;
+
 import java.util.List;
 
 import static ConnectionClass.CollectionQuery.getCollection;
-import static ConnectionClass.CollectionQuery.getCollectionDescription;
 
 public class CollectionViewController {
 
     public VBox vBox;
+    public AnchorPane anchorPane;
 
     public void initialize(){
+
         showCollection();
+
+
     }
 
     private void showCollection() {
@@ -32,7 +35,7 @@ public class CollectionViewController {
             CollectionEntity collectionEntity = collectionEntities.get(i);
 
 
-            Label label = new Label(i + 1 + " " + getCollectionDescription(collectionEntity.getIddescription()).getTitle());
+            Label label = new Label(i + 1 + " " + MainQuery.getDescription(collectionEntity.getIddescription()).getTitle());
             label.setCursor(Cursor.HAND);
             label.setOnMouseClicked(new javafx.event.EventHandler<javafx.scene.input.MouseEvent>() {
                 @Override
