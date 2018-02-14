@@ -23,7 +23,6 @@ public class CollectionViewController {
 
         showCollection();
 
-
     }
 
     private void showCollection() {

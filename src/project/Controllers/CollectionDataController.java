@@ -1,6 +1,7 @@
 package project.Controllers;
 
 import JPAEntity.CollectionEntity;
+import javafx.event.ActionEvent;
 import javafx.scene.layout.VBox;
 import project.Main;
 
@@ -20,5 +21,9 @@ public class CollectionDataController {
 
     public void onClickAdd(){
         Main.showAddWork();
+    }
+
+    public void onClickEditColl(ActionEvent actionEvent) {
+        Main.editCollection();
     }
 }

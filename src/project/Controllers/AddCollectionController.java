@@ -1,6 +1,7 @@
 package project.Controllers;
 
 import ConnectionClass.CollectionQuery;
+import JPAEntity.CollectionEntity;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -27,6 +28,7 @@ public class AddCollectionController {
     public TextArea DescriptionCollectionArea;
     public Button AddButton;
 
+
     public void onClickAdd(ActionEvent actionEvent) {
         if (!Objects.equals(AdresField.getText(), "")) {
             if (!Objects.equals(TitleCollectionField.getText(), "")) {
@@ -48,4 +50,6 @@ public class AddCollectionController {
         Stage stage = (Stage) source.getScene().getWindow();
         stage.close();
     }
+
 }
+

@@ -244,6 +244,30 @@ public class Main extends Application {
 
     }
 
+    public static void editCollection(){
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/EditCollection.fxml"));
+            Accordion page2 = loader.load();
+
+            Stage newCollection = new Stage();
+            newCollection.initModality(Modality.WINDOW_MODAL);
+            newCollection.initOwner(primaryStage);
+            Scene scene = new Scene(page2);
+            newCollection.setScene(scene);
+            newCollection.setMinWidth(506);
+            newCollection.setMaxWidth(506);
+            newCollection.setMinHeight(379);
+            newCollection.setMaxHeight(379);
+
+            newCollection.showAndWait();
+
+
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
     public static void addCollection(){
         try{
             FXMLLoader loader = new FXMLLoader();
