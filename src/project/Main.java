@@ -80,6 +80,8 @@ public class Main extends Application {
             primaryStage.setMinHeight(650);
             primaryStage.setMaxHeight(650);
 
+            primaryStage.setResizable(false);
+
             initCollectionView();
 
         } catch (IOException e){
@@ -163,8 +165,30 @@ public class Main extends Application {
             collectionDataStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
             collectionDataStage.setScene(scene);
+            collectionDataStage.setResizable(false);
 
             collectionDataStage.showAndWait();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static void showWorkData(){
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/WorkData.fxml"));
+            AnchorPane page = loader.load();
+
+            Stage workDataStage = new Stage();
+            workDataStage.initModality(Modality.WINDOW_MODAL);
+            workDataStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            workDataStage.setScene(scene);
+            workDataStage.setResizable(false);
+
+            workDataStage.showAndWait();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -213,6 +237,7 @@ public class Main extends Application {
             registerStage.setMaxHeight(259);
             registerStage.setMinWidth(216);
             registerStage.setMaxWidth(216);
+            registerStage.setResizable(false);
 
             registerStage.showAndWait();
 
@@ -250,17 +275,18 @@ public class Main extends Application {
             loader.setLocation(Main.class.getResource("FXML/EditCollection.fxml"));
             Accordion page2 = loader.load();
 
-            Stage newCollection = new Stage();
-            newCollection.initModality(Modality.WINDOW_MODAL);
-            newCollection.initOwner(primaryStage);
+            Stage editCollection = new Stage();
+            editCollection.initModality(Modality.WINDOW_MODAL);
+            editCollection.initOwner(primaryStage);
             Scene scene = new Scene(page2);
-            newCollection.setScene(scene);
-            newCollection.setMinWidth(506);
-            newCollection.setMaxWidth(506);
-            newCollection.setMinHeight(379);
-            newCollection.setMaxHeight(379);
+            editCollection.setScene(scene);
+            editCollection.setMinWidth(506);
+            editCollection.setMaxWidth(506);
+            editCollection.setMinHeight(379);
+            editCollection.setMaxHeight(379);
+            editCollection.setResizable(false);
 
-            newCollection.showAndWait();
+            editCollection.showAndWait();
 
 
         } catch (IOException e){
@@ -283,6 +309,7 @@ public class Main extends Application {
             newCollection.setMaxWidth(506);
             newCollection.setMinHeight(379);
             newCollection.setMaxHeight(379);
+            newCollection.setResizable(false);
 
             newCollection.showAndWait();
 
