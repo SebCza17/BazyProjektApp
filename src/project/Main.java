@@ -5,6 +5,7 @@ import JPAEntity.CollectionEntity;
 import JPAEntity.UserEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Accordion;
@@ -105,7 +106,7 @@ public class Main extends Application {
 
             FrameAfterLogin.setCenter(CollectionView);
             BorderPane.setAlignment(CollectionView, Pos.TOP_LEFT);
-            
+
 
         }catch (IOException e) {
             e.printStackTrace();
