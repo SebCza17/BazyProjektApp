@@ -1,7 +1,7 @@
 package project.Controllers;
 
 import ConnectionClass.MainQuery;
-import ConnectionClass.UserRegisterQuery;
+import ConnectionClass.UserQuery;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
@@ -34,7 +34,7 @@ public class RegisterController {
     @FXML
     private void onClickOK() {
         if (validation()) {
-            UserRegisterQuery.addUser(EmailField.getText(), Pass2Field.getText());
+            UserQuery.addUser(EmailField.getText(), Pass2Field.getText());
             Timeline timeline = new Timeline(new KeyFrame(
                     Duration.millis(2000),
                     ae -> onClickCancel()));
