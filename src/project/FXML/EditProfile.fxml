@@ -9,6 +9,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
 <AnchorPane prefHeight="477.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.EditProfileController">
     <children>
       <VBox layoutX="29.0" layoutY="42.0" prefHeight="390.0" prefWidth="278.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
@@ -18,51 +20,51 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <PasswordField promptText="Name">
+            <TextField promptText="Name">
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin>
-            </PasswordField>
-            <PasswordField promptText="Surname">
+            </TextField>
+            <TextField promptText="Surname">
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin>
-            </PasswordField>
-            <PasswordField promptText="Born">
+            </TextField>
+            <TextField promptText="Born">
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin>
-            </PasswordField>
+            </TextField>
             <Label text="Contact">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <PasswordField promptText="Phone Number">
+            <TextField promptText="Phone Number">
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin>
-            </PasswordField>
-            <PasswordField promptText="Email">
+            </TextField>
+            <TextField promptText="Email">
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin>
-            </PasswordField>
-            <PasswordField promptText="Address">
+            </TextField>
+            <TextField promptText="Address">
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin>
-            </PasswordField>
+            </TextField>
             <Label text="Description">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <PasswordField promptText="Title">
+            <TextField promptText="Title">
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin>
-            </PasswordField>
+            </TextField>
             <TextArea prefHeight="102.0" prefWidth="278.0" promptText="Description" />
          </children>
       </VBox>
