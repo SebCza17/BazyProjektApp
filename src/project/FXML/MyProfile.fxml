@@ -28,7 +28,7 @@
         <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
         <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
          <children>
-            <Button layoutX="133.0" layoutY="14.0" mnemonicParsing="false" text="Edit Profile" />
+            <Button layoutX="133.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickEdit" text="Edit Profile" />
             <Button layoutX="211.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBack" text="Back" />
          </children></Pane>
         <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">

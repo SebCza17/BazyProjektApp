@@ -48,11 +48,13 @@ public class Main extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
 
-            primaryStage.setMinWidth(825);
-            primaryStage.setMaxWidth(825);
+            //primaryStage.setMinWidth(825);
+            //primaryStage.setMaxWidth(825);
 
-            primaryStage.setMinHeight(650);
-            primaryStage.setMaxHeight(650);
+            //primaryStage.setMinHeight(650);
+            //primaryStage.setMaxHeight(650);
+
+            primaryStage.setResizable(false);
 
             initLoginOrRegister();
 
@@ -184,6 +186,8 @@ public class Main extends Application {
             //newWork.setMinWidth(506);
             //newWork.setMinHeight(379);
 
+            newWork.setResizable(false);
+
             newWork.showAndWait();
 
 
@@ -215,6 +219,29 @@ public class Main extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void editProfile(){
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/EditProfile.fxml"));
+            AnchorPane page = loader.load();
+
+            Stage editProfile = new Stage();
+            editProfile.initModality(Modality.WINDOW_MODAL);
+            editProfile.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            editProfile.setScene(scene);
+
+            editProfile.setResizable(false);
+
+            editProfile.showAndWait();
+
+
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+
     }
 
     public static void addCollection(){
