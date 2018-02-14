@@ -106,6 +106,7 @@ public class Main extends Application {
             FrameAfterLogin.setCenter(CollectionView);
             BorderPane.setAlignment(CollectionView, Pos.TOP_LEFT);
             
+
         }catch (IOException e) {
             e.printStackTrace();
         }
