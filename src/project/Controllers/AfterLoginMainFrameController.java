@@ -24,10 +24,6 @@ public class AfterLoginMainFrameController {
 
     public BorderPane borderPane;
 
-    public void initialize(){
-
-
-    }
 
     public void onClickSignOut(ActionEvent actionEvent) {
 

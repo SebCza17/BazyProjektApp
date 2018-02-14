@@ -35,6 +35,8 @@ public class Main extends Application {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("BazyProjektApp");
 
+
+
         initMainFrameBeforeLogin();
     }
 

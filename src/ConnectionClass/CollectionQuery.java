@@ -74,15 +74,23 @@ public class CollectionQuery {
         return collectionEntities;
     }
 
-//    public static DescriptionEntity getCollectionDescription(int i){
-//        EntityManager entityManager = MainQuery.initialConnection();
-//
-//        Query query = entityManager.createQuery("SELECT s from DescriptionEntity s WHERE s.iddescription =" + i);
-//        List<DescriptionEntity> descriptionEntities = query.getResultList();
-//        DescriptionEntity descriptionEntity = descriptionEntities.get(0);
-//
-//        MainQuery.closeConnection(entityManager);
-//
-//        return descriptionEntity;
-//    }
+    public static void updateCollection(DescriptionEntity descriptionEntityLocation, ContactEntity contactEntity, DescriptionEntity descriptionEntityCollection){
+
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        entityManager.getTransaction().begin();
+
+        entityManager.merge(descriptionEntityLocation);
+        entityManager.merge(descriptionEntityCollection);
+        entityManager.merge(contactEntity);
+
+        entityManager.getTransaction().commit();
+
+        MainQuery.closeConnection(entityManager);
+
+    }
+
+
+
+
 }

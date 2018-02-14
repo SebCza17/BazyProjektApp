@@ -1,7 +1,6 @@
 package ConnectionClass;
 
-import JPAEntity.DescriptionEntity;
-import JPAEntity.UserEntity;
+import JPAEntity.*;
 import project.Main;
 
 import javax.persistence.EntityManager;
@@ -66,6 +65,7 @@ public class MainQuery {
            return false;
        }
    }
+
     public static DescriptionEntity getDescription(int i){
         EntityManager entityManager = MainQuery.initialConnection();
 
@@ -76,6 +76,30 @@ public class MainQuery {
         MainQuery.closeConnection(entityManager);
 
         return descriptionEntity;
+    }
+
+    public static ContactEntity getContact(int i){
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        Query query = entityManager.createQuery("SELECT s from ContactEntity s WHERE s.idcontact =" + i);
+        List<ContactEntity> contactEntities = query.getResultList();
+        ContactEntity contactEntity = contactEntities.get(0);
+
+        MainQuery.closeConnection(entityManager);
+
+        return contactEntity;
+    }
+
+    public static LocationEntity getLocation(int i){
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        Query query = entityManager.createQuery("SELECT s from LocationEntity s WHERE s.idlocation =" + i);
+        List<LocationEntity> locationEntities = query.getResultList();
+        LocationEntity locationEntity = locationEntities.get(0);
+
+        MainQuery.closeConnection(entityManager);
+
+        return locationEntity;
     }
 
    public static void logOut(){
