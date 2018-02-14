@@ -48,6 +48,12 @@ public class Main extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
 
+            primaryStage.setMinWidth(825);
+            primaryStage.setMaxWidth(825);
+
+            primaryStage.setMinHeight(650);
+            primaryStage.setMaxHeight(650);
+
             initLoginOrRegister();
 
         } catch (IOException e){
@@ -65,6 +71,12 @@ public class Main extends Application {
             Scene scene = new Scene(FrameAfterLogin);
             primaryStage.setScene(scene);
             primaryStage.show();
+
+            primaryStage.setMinWidth(825);
+            primaryStage.setMaxWidth(825);
+
+            primaryStage.setMinHeight(650);
+            primaryStage.setMaxHeight(650);
 
             initCollectionView();
 
@@ -217,7 +229,9 @@ public class Main extends Application {
             Scene scene = new Scene(page);
             newCollection.setScene(scene);
             newCollection.setMinWidth(506);
+            newCollection.setMaxWidth(506);
             newCollection.setMinHeight(379);
+            newCollection.setMaxHeight(379);
 
             newCollection.showAndWait();
 
