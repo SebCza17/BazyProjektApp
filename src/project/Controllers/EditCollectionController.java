@@ -68,6 +68,9 @@ public class EditCollectionController {
                 CollectionQuery.updateCollection(descriptionEntityLocation, contactEntity, descriptionEntityCollection);
 
                 stageClose(actionEvent);
+
+                Main.initMainFrameAfterLogin();
+
             } else System.out.println("Error title collection");
         } else System.out.println("Error address");
     }

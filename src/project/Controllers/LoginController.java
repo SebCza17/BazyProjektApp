@@ -29,8 +29,6 @@ public class LoginController {
 
     public void onClickOk() {
         if(validation()){
-            ErrorLabel.setText("Login Success!" + Main.userEntity.getIduser());
-            ErrorLabel.setTextFill(Color.web("Green"));
             Main.initMainFrameAfterLogin();
             onClickCancel();
             /*Timeline timeline = new Timeline(new KeyFrame(
