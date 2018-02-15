@@ -148,18 +148,6 @@ public class MainQuery {
         return authorEntity;
     }
 
-    public static PersonaldataEntity getPersonalData(int i){
-        EntityManager entityManager = MainQuery.initialConnection();
-
-        Query query = entityManager.createQuery("SELECT s from PersonaldataEntity s WHERE s.idpersonaldata =" + i);
-        List<PersonaldataEntity> personaldataEntities = query.getResultList();
-        PersonaldataEntity personaldataEntity = personaldataEntities.get(0);
-
-        MainQuery.closeConnection(entityManager);
-
-        return personaldataEntity;
-    }
-
    public static void logOut(){
        Main.userEntity = null;
    }

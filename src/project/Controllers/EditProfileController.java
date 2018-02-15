@@ -74,6 +74,7 @@ public class EditProfileController {
                     personaldataEntity.setBorn(ProfileBornField.getText());
 
                     UserQuery.editProfile(personaldataEntity,contactEntity,descriptionEntity);
+                    stageClose(actionEvent);
 
                 }else {
                     UserQuery.addProfiledata(ProfileNameField.getText(), ProfileSurnameField.getText(), ProfileBornField.getText(),
