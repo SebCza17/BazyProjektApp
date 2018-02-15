@@ -12,7 +12,7 @@ import java.util.List;
 public class MainQuery {
 
 
-    static EntityManager initialConnection() {
+    public static EntityManager initialConnection() {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("NewPersistenceUnit");
         return entityManagerFactory.createEntityManager();
     }
@@ -101,6 +101,40 @@ public class MainQuery {
 
         return locationEntity;
     }
+    public static PersonaldataEntity getPersonalData(int i){
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        Query query = entityManager.createQuery("SELECT s from PersonaldataEntity s WHERE s.idpersonaldata =" + i);
+        List<PersonaldataEntity> personalEntities = query.getResultList();
+        PersonaldataEntity personaldataEntity = personalEntities.get(0);
+
+        MainQuery.closeConnection(entityManager);
+
+        return personaldataEntity;
+    }
+    public static UserdataEntity getUserData(){
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        Query query = entityManager.createQuery("SELECT s from UserdataEntity s WHERE s.id =" + Main.userEntity.getIduser());
+        List<UserdataEntity> userDataEntities = query.getResultList();
+        UserdataEntity userdataEntity = userDataEntities.get(0);
+
+        MainQuery.closeConnection(entityManager);
+
+        return userdataEntity;
+    }
+
+    public static boolean checkUserDataExist(){
+        boolean exist = false;
+        EntityManager entityManager = MainQuery.initialConnection();
+        Query query = entityManager.createQuery("SELECT s from UserdataEntity s WHERE s.id =" + Main.userEntity.getIduser());
+        List<UserdataEntity> userdataEntities = query.getResultList();
+        if (userdataEntities.size()>0){
+            exist=true;
+        }
+        MainQuery.closeConnection(entityManager);
+        return exist;
+    }
 
     public static AuthorEntity getAuthor(int i){
         EntityManager entityManager = MainQuery.initialConnection();
@@ -130,7 +164,7 @@ public class MainQuery {
        Main.userEntity = null;
    }
 
-   static void closeConnection(EntityManager entityManager){
+   public static void closeConnection(EntityManager entityManager){
        entityManager.close();
    }
 }

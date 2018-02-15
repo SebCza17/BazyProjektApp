@@ -20,7 +20,7 @@ public class EditCollectionController {
 
     public TextField PhoneNField;
     public TextField EmailField;
-    public TextField AdresField;
+    public TextField AdresField;//Important too!
     public TextField TitleLocationField;
     public TextArea DescriptionLocationArea;
     public TextField TitleCollectionField; //Important!

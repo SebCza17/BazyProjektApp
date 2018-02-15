@@ -4,6 +4,8 @@ import JPAEntity.*;
 import project.Main;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
+import java.util.List;
 
 public class UserQuery {
 
@@ -24,7 +26,23 @@ public class UserQuery {
 
     }
 
-    public static void editProfile(
+    public static void editProfile(PersonaldataEntity personaldataEntity,ContactEntity contactEntity,DescriptionEntity descriptionEntity)
+    {
+
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        entityManager.getTransaction().begin();
+
+        entityManager.merge(personaldataEntity);
+        entityManager.merge(contactEntity);
+        entityManager.merge(descriptionEntity);
+
+        entityManager.getTransaction().commit();
+
+        MainQuery.closeConnection(entityManager);
+    }
+
+    public static void addProfiledata(
             //PERSONAL DATA
             String name, String surname, String born,
             //CONTACT
