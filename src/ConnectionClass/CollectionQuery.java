@@ -63,7 +63,7 @@ public class CollectionQuery {
     }
 
 
-    public static List<CollectionEntity> getCollection(){
+    public static List<CollectionEntity> getCollections(){
         EntityManager entityManager = MainQuery.initialConnection();
 
         Query query = entityManager.createQuery("SELECT s from CollectionEntity s WHERE s.idUser =" + Main.userEntity.getIduser());

@@ -100,7 +100,7 @@ public class WorkQuery {
 
     }
 
-    public static List<WorkEntity> getWork() {
+    public static List<WorkEntity> getWorks() {
         EntityManager entityManager = MainQuery.initialConnection();
 
         Query query = entityManager.createQuery("SELECT s from WorkEntity s WHERE s.idcollection =" + CollectionDataController.collectionEntity.getIdcollection());
@@ -109,5 +109,17 @@ public class WorkQuery {
         MainQuery.closeConnection(entityManager);
 
         return workEntities;
+    }
+
+    public static WorkdataEntity getWorkData(int i) {
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        Query query = entityManager.createQuery("SELECT s from WorkdataEntity s WHERE s.idWork =" + i);
+        List<WorkdataEntity> workdataEntities = query.getResultList();
+        WorkdataEntity workdataEntity = workdataEntities.get(0);
+
+        MainQuery.closeConnection(entityManager);
+
+        return workdataEntity;
     }
 }

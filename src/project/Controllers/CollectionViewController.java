@@ -3,22 +3,17 @@ package project.Controllers;
 import ConnectionClass.MainQuery;
 import JPAEntity.CollectionEntity;
 import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.control.Label;
-import javafx.scene.effect.InnerShadow;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
 import project.Main;
-import javafx.scene.effect.DropShadow;
 
 
 import java.util.List;
 
-import static ConnectionClass.CollectionQuery.getCollection;
+import static ConnectionClass.CollectionQuery.getCollections;
 
 public class CollectionViewController {
 
@@ -33,7 +28,7 @@ public class CollectionViewController {
 
     private void showCollection() {
 
-        List<CollectionEntity> collectionEntities = getCollection();
+        List<CollectionEntity> collectionEntities = getCollections();
 
         for (int i = 0; i < collectionEntities.size(); i++) {
 

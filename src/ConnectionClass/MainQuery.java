@@ -35,7 +35,7 @@ public class MainQuery {
         return true;
     }
 
-   public static boolean checkEmail(String email){
+    public static boolean checkEmail(String email){
        EntityManager entityManager = initialConnection();
 
        Query query = entityManager.createQuery("SELECT COUNT(s.email) FROM UserEntity s WHERE s.email = '" + email +  "'");
@@ -46,7 +46,7 @@ public class MainQuery {
        return count == 0;
    }
 
-   public static boolean checkLogin(String email, String password){
+    public static boolean checkLogin(String email, String password){
        EntityManager entityManager = initialConnection();
 
        Query query = entityManager.createQuery("SELECT COUNT(s.iduser) FROM UserEntity s where s.email ='" + email + "' and s.pass = '" + password + "'");
@@ -100,6 +100,30 @@ public class MainQuery {
         MainQuery.closeConnection(entityManager);
 
         return locationEntity;
+    }
+
+    public static AuthorEntity getAuthor(int i){
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        Query query = entityManager.createQuery("SELECT s from AuthorEntity s WHERE s.idauthor =" + i);
+        List<AuthorEntity> authorEntities = query.getResultList();
+        AuthorEntity authorEntity = authorEntities.get(0);
+
+        MainQuery.closeConnection(entityManager);
+
+        return authorEntity;
+    }
+
+    public static PersonaldataEntity getPersonalData(int i){
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        Query query = entityManager.createQuery("SELECT s from PersonaldataEntity s WHERE s.idpersonaldata =" + i);
+        List<PersonaldataEntity> personaldataEntities = query.getResultList();
+        PersonaldataEntity personaldataEntity = personaldataEntities.get(0);
+
+        MainQuery.closeConnection(entityManager);
+
+        return personaldataEntity;
     }
 
    public static void logOut(){
