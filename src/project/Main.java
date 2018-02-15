@@ -3,6 +3,7 @@ package project;
 import ConnectionClass.MainQuery;
 import JPAEntity.CollectionEntity;
 import JPAEntity.UserEntity;
+import JPAEntity.WorkEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -29,6 +30,7 @@ public class Main extends Application {
 
     public static UserEntity userEntity = null;
     public static CollectionEntity collectionEntity = null;
+    public static WorkEntity workEntity = null;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -168,6 +170,7 @@ public class Main extends Application {
             Scene scene = new Scene(page);
             collectionDataStage.setScene(scene);
             collectionDataStage.setResizable(false);
+            collectionDataStage.titleProperty().setValue("Work List");
 
             collectionDataStage.showAndWait();
 

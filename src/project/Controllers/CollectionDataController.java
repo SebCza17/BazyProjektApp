@@ -54,16 +54,16 @@ public class CollectionDataController {
 
             hBox.setCursor(Cursor.HAND);
             
-//            hBox.setOnMouseClicked(new javafx.event.EventHandler<javafx.scene.input.MouseEvent>() {
-//                @Override
-//                public void handle(javafx.scene.input.MouseEvent event) {
-//                    int idCollection = collectionEntity.getIdcollection();
-//
-//                    System.out.println("test" + idCollection);
-//                    Main.collectionEntity = collectionEntity;
-//                    Main.showCollectionData();
-//                }
-//            });
+           hBox.setOnMouseClicked(new javafx.event.EventHandler<javafx.scene.input.MouseEvent>() {
+               @Override
+               public void handle(javafx.scene.input.MouseEvent event) {
+                   int idWork = workEntity.getIdwork();
+
+                    System.out.println("test" + idWork);
+                    Main.workEntity = workEntity;
+                    Main.showWorkData();
+               }
+           });
 
             hBox.setOnMouseEntered(new EventHandler<MouseEvent>() {
                 @Override
