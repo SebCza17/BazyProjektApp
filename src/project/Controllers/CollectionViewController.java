@@ -11,6 +11,7 @@ import javafx.scene.layout.*;
 import project.Main;
 
 
+import javax.persistence.EntityManager;
 import java.util.List;
 
 import static ConnectionClass.CollectionQuery.getCollections;
@@ -30,6 +31,8 @@ public class CollectionViewController {
 
         List<CollectionEntity> collectionEntities = getCollections();
 
+        EntityManager entityManager = MainQuery.initialConnection();
+
         for (int i = 0; i < collectionEntities.size(); i++) {
 
             CollectionEntity collectionEntity = collectionEntities.get(i);
@@ -41,8 +44,11 @@ public class CollectionViewController {
             hBox.setHgrow(region, Priority.ALWAYS);
 
 
-            Label label = new Label(i + 1 + ". " + MainQuery.getDescription(collectionEntity.getIddescription()).getTitle());
-            Label label1 = new Label(MainQuery.getDescription(MainQuery.getLocation(collectionEntity.getIdlocation()).getIddescription()).getTitle());
+
+
+            Label label = new Label(i + 1 + ". " + MainQuery.getDescription(entityManager ,collectionEntity.getIddescription()).getTitle());
+            Label label1 = new Label(MainQuery.getDescription(entityManager ,MainQuery.getLocation(entityManager ,collectionEntity.getIdlocation()).getIddescription()).getTitle());
+
 
             label.setStyle("-fx-font-size: 16px");
             label1.setPadding(new Insets(10, 0, 0, 0));
@@ -74,10 +80,13 @@ public class CollectionViewController {
             });
 
 
+
             hBox.getChildren().addAll(label,region, label1);
 
             vBox.getChildren().add(hBox);
         }
+
+        MainQuery.closeConnection(entityManager);
     }
 
 

@@ -74,12 +74,12 @@ public class EditProfileController {
                     personaldataEntity.setBorn(ProfileBornField.getText());
 
                     UserQuery.editProfile(personaldataEntity,contactEntity,descriptionEntity);
-                    stageClose(actionEvent);
+                    Main.stageClose(actionEvent);
 
                 }else {
                     UserQuery.addProfiledata(ProfileNameField.getText(), ProfileSurnameField.getText(), ProfileBornField.getText(),
                             ProfilePhoneField.getText(), ProfileEmailField.getText(), ProfileAddressField.getText(), ProfileTitleField.getText(), ProfileDescriptionField.getText());
-                    stageClose(actionEvent);
+                    Main.stageClose(actionEvent);
                 }
 
     }
@@ -92,9 +92,5 @@ public class EditProfileController {
         stage.close();
     }
 
-    private void stageClose(ActionEvent actionEvent){
-        Node source = (Node) actionEvent.getSource();
-        Stage stage = (Stage) source.getScene().getWindow();
-        stage.close();
-    }
+
 }

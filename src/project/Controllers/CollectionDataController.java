@@ -15,6 +15,8 @@ import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import project.Main;
 
+import javax.persistence.EntityManager;
+
 import static ConnectionClass.WorkQuery.getWorkData;
 import static ConnectionClass.WorkQuery.getWorks;
 
@@ -35,6 +37,9 @@ public class CollectionDataController {
 
         List<WorkEntity> workEntities = getWorks();
 
+
+        EntityManager entityManager = MainQuery.initialConnection();
+
         for (int i = 0; i < workEntities.size(); i++) {
 
             WorkEntity workEntity = workEntities.get(i);
@@ -46,8 +51,8 @@ public class CollectionDataController {
             hBox.setHgrow(region, Priority.ALWAYS);
 
 
-            Label label = new Label(i + 1 + ". " + MainQuery.getDescription(getWorkData(workEntity.getIdwork()).getIdDescription()).getTitle());
-            Label label1 = new Label(MainQuery.getPersonalData(MainQuery.getAuthor(workEntity.getIdauthor()).getIdPersonalData()).getName());
+            Label label = new Label(i + 1 + ". " + MainQuery.getDescription(entityManager ,getWorkData(entityManager ,workEntity.getIdwork()).getIdDescription()).getTitle());
+            Label label1 = new Label(MainQuery.getPersonalData(entityManager ,MainQuery.getAuthor(entityManager ,workEntity.getIdauthor()).getIdPersonalData()).getName());
 
             label.setStyle("-fx-font-size: 16px");
             label1.setPadding(new Insets(10, 0, 0, 0));
@@ -85,10 +90,13 @@ public class CollectionDataController {
             vBox.getChildren().add(hBox);
         }
 
+        MainQuery.closeConnection(entityManager);
+
     }
 
-    public void onClickAdd(){
+    public void onClickAdd(ActionEvent actionEvent){
         Main.showAddWork();
+        Main.stageClose(actionEvent);
     }
 
     public void onClickEditColl(ActionEvent actionEvent) {

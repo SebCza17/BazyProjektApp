@@ -111,6 +111,15 @@ public class WorkQuery {
         return workEntities;
     }
 
+    public static WorkdataEntity getWorkData(EntityManager entityManager ,int i) {
+
+        Query query = entityManager.createQuery("SELECT s from WorkdataEntity s WHERE s.idWork =" + i);
+        List<WorkdataEntity> workdataEntities = query.getResultList();
+        WorkdataEntity workdataEntity = workdataEntities.get(0);
+
+        return workdataEntity;
+    }
+
     public static WorkdataEntity getWorkData(int i) {
         EntityManager entityManager = MainQuery.initialConnection();
 

@@ -40,16 +40,12 @@ public class AddCollectionController {
                         TitleLocationField.getText(), DescriptionLocationArea.getText(),
                         TitleCollectionField.getText(), DescriptionCollectionArea.getText());
                         Main.initMainFrameAfterLogin();
-                stageClose(actionEvent);
+                Main.stageClose(actionEvent);
             } else System.out.println("Error title collection");
         } else System.out.println("Error addrese");
     }
 
-    private void stageClose(ActionEvent actionEvent){
-        Node source = (Node) actionEvent.getSource();
-        Stage stage = (Stage) source.getScene().getWindow();
-        stage.close();
-    }
+
 
 }
 

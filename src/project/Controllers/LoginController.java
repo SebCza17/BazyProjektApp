@@ -1,6 +1,8 @@
 package project.Controllers;
 
 import ConnectionClass.MainQuery;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -8,6 +10,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import project.Main;
 
 import java.util.Objects;
@@ -27,14 +30,21 @@ public class LoginController {
         stage.close();
     }
 
-    public void onClickOk() {
+    private void end(){
+        Main.initMainFrameAfterLogin();
+        onClickCancel();
+    }
+
+    public void onClickOk() throws InterruptedException {
         if(validation()){
-            Main.initMainFrameAfterLogin();
-            onClickCancel();
-            /*Timeline timeline = new Timeline(new KeyFrame(
-                    Duration.millis(2000),
-                    ae -> onClickCancel()));
-            timeline.play();*/
+            ErrorLabel.setText("Success! \t Please Wait...");
+            ErrorLabel.setTextFill(Color.web("Green"));
+
+
+            Timeline timeline = new Timeline(new KeyFrame(
+                    Duration.millis(1),
+                    ae -> end()));
+            timeline.play();
         }
     }
 
@@ -62,4 +72,6 @@ public class LoginController {
             return false;
         }
     }
+
+
 }

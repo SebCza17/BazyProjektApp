@@ -43,18 +43,13 @@ public class AddWorkController {
                         WorkTitleDescField.getText(), WorkDescArea.getText(),
                         WorkYearField.getText(), WorkEpochField.getText());
 
-                stageClose(actionEvent);
+                Main.stageClose(actionEvent);
 
             } else System.out.println("Error title work");
         } else System.out.println("Error author name ");
 
     }
 
-    private void stageClose(ActionEvent actionEvent){
-        Node source = (Node) actionEvent.getSource();
-        Stage stage = (Stage) source.getScene().getWindow();
-        stage.close();
-    }
 }
 
 
