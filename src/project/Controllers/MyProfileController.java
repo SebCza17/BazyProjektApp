@@ -5,9 +5,16 @@ import JPAEntity.ContactEntity;
 import JPAEntity.DescriptionEntity;
 import JPAEntity.PersonaldataEntity;
 import JPAEntity.UserdataEntity;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import project.Main;
 
+import java.io.File;
 
 
 public class MyProfileController {
@@ -19,6 +26,7 @@ public class MyProfileController {
     public Label addressValue;
     public Label titleValue;
     public Label descValue;
+    public ImageView profileImage;
 
 
     public void initialize(){
@@ -44,6 +52,15 @@ public class MyProfileController {
 
     public void onClickBack(){
         Main.initMainFrameAfterLogin();
+    }
+
+    @FXML
+    protected void onClickAddPhoto(ActionEvent event) {
+        FileChooser chooser = new FileChooser();
+        chooser.setTitle("Open File");
+        chooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
+        File file = chooser.showOpenDialog(new Stage());
+
     }
 
     public void onClickEdit(){
