@@ -20,8 +20,8 @@
    <children>
       <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
-            <Button layoutX="75.0" layoutY="75.0" minWidth="100.0" mnemonicParsing="false" onAction="#onClickLogin" text="Login" />
-            <Button layoutX="75.0" layoutY="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onClickRegister" text="Register" textAlignment="CENTER" />
+            <Button fx:id="loginButton" layoutX="75.0" layoutY="75.0" minWidth="100.0" mnemonicParsing="false" onAction="#onClickLogin" text="Login" />
+            <Button fx:id="registerButton" layoutX="75.0" layoutY="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onClickRegister" text="Register" textAlignment="CENTER" />
          </children>
       </Pane>
       <Pane prefHeight="200.0" prefWidth="200.0" />

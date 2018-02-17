@@ -36,7 +36,7 @@ public class LoginController {
     }
 
     public void onClickOk() throws InterruptedException {
-        if(validation()){
+        if(validation()){           
             ErrorLabel.setText("Success! \t Please Wait...");
             ErrorLabel.setTextFill(Color.web("Green"));
 

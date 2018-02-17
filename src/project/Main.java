@@ -17,6 +17,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import project.Controllers.ConnectionOffController;
+import project.Controllers.LoginOrRegisterController;
 
 import java.io.IOException;
 
@@ -26,6 +28,7 @@ public class Main extends Application {
     private static BorderPane FrameBeforeLogin;
     private static BorderPane FrameAfterLogin;
     private static GridPane LoginOrRegister;
+    private static GridPane ConnectionOff;
     private static GridPane MyProfile;
     private static AnchorPane CollectionView;
     private static AnchorPane CollectionData;
@@ -62,7 +65,13 @@ public class Main extends Application {
 
             primaryStage.setResizable(false);
 
-            initLoginOrRegister();
+            if(MainQuery.testConnection()){
+
+                initLoginOrRegister();
+            }
+            else{
+                initConnectionOff();
+            }
 
         } catch (IOException e){
             e.printStackTrace();
@@ -95,13 +104,27 @@ public class Main extends Application {
         }
     }
 
-    private static void initLoginOrRegister() {
+    public static void initLoginOrRegister() {
         try{
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("FXML/LoginOrRegister.fxml"));
             LoginOrRegister = loader.load();
 
             FrameBeforeLogin.setCenter(LoginOrRegister);
+
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public static void initConnectionOff() {
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/ConnectionOff.fxml"));
+            ConnectionOff = loader.load();
+
+            FrameBeforeLogin.setCenter(ConnectionOff);
 
         }catch (IOException e) {
             e.printStackTrace();
@@ -328,10 +351,9 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 
-       MainQuery.testConnection();
-
         launch(args);
     }
+
 
     public static void stageClose(ActionEvent actionEvent){
         Node source = (Node) actionEvent.getSource();
