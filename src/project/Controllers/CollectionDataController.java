@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Cursor;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
@@ -26,21 +27,22 @@ public class CollectionDataController {
 
     public VBox vBox;
     public static CollectionEntity collectionEntity = Main.collectionEntity;
+    int maxShow = 5;
 
     public void initialize(){
         collectionEntity = Main.collectionEntity;
         System.out.println(collectionEntity.getIdcollection());
-        showWork();
+        showWork(0);
     }
 
-    private void showWork(){
+    private void showWork(int i){
 
         List<WorkEntity> workEntities = getWorks();
 
 
         EntityManager entityManager = MainQuery.initialConnection();
 
-        for (int i = 0; i < workEntities.size(); i++) {
+        for (; i < workEntities.size() && i < maxShow; i++) {
 
             WorkEntity workEntity = workEntities.get(i);
 
@@ -89,6 +91,31 @@ public class CollectionDataController {
 
             vBox.getChildren().add(hBox);
         }
+        Region region = new Region();
+        Region region1 = new Region();
+
+        HBox hBox = new HBox();
+
+        hBox.setHgrow(region, Priority.ALWAYS);
+        hBox.setHgrow(region1, Priority.ALWAYS);
+
+        Button button = new Button("More");
+
+        button.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                vBox.getChildren().remove(hBox);
+
+                if(workEntities.size()>maxShow) {
+                    int oldMax = maxShow;
+                    maxShow += maxShow;
+                    showWork(oldMax);
+                }
+            }
+        });
+
+        hBox.getChildren().setAll(region,button,region1);
+        vBox.getChildren().add(hBox);
 
         MainQuery.closeConnection(entityManager);
 
