@@ -12,6 +12,7 @@
         <class>JPAEntity.UserdataEntity</class>
         <class>JPAEntity.WorkEntity</class>
         <class>JPAEntity.WorkdataEntity</class>
+        <class>JPAEntity.ImagesEntity</class>
         <properties>
             <property name="eclipselink.jdbc.url" value="jdbc:postgresql://horton.elephantsql.com:5432/khgmqurw"/>
             <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>

@@ -9,6 +9,7 @@ public class UserdataEntity {
     private int idPersonalData;
     private int idContact;
     private int idDescription;
+    private int idImage;
 
 
     @Id
@@ -49,5 +50,15 @@ public class UserdataEntity {
 
     public void setIdDescription(int idDescription) {
         this.idDescription = idDescription;
+    }
+
+    @Basic
+    @Column(name = "idimage")
+    public int getIdImage() {
+        return idImage;
+    }
+
+    public void setIdImage(int idImage) {
+        this.idImage = idImage;
     }
 }

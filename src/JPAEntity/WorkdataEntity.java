@@ -9,6 +9,7 @@ public class WorkdataEntity {
     private String epoch;
     private int idWork;
     private int idDescription;
+    private int idImage;
 
     @Id
     @Column(name = "idwork")
@@ -28,6 +29,16 @@ public class WorkdataEntity {
 
     public void setIdDescription(int idDescription) {
         this.idDescription = idDescription;
+    }
+
+    @Basic
+    @Column(name = "idimage")
+    public int getIdImage() {
+        return idImage;
+    }
+
+    public void setIdImage(int idImage) {
+        this.idImage = idImage;
     }
 
     @Basic
