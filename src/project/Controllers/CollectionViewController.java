@@ -5,6 +5,7 @@ import JPAEntity.CollectionEntity;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Cursor;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
@@ -116,6 +117,40 @@ public class CollectionViewController {
 
         MainQuery.closeConnection(entityManager);
     }
+    private void set_cursor_waiting(final Scene scene)
+    {
+        Runnable r=new Runnable() {
 
+            @Override
+            public void run() {
+                scene.setCursor(Cursor.WAIT);
+            }
+        };
+        Thread t=new Thread(r);
+        t.start();
+    }
+    private void set_cursor_normal(final Scene scene)
+    {
+        Runnable r=new Runnable() {
+
+            @Override
+            public void run() {
+                scene.setCursor(Cursor.DEFAULT);
+            }
+        };
+        Thread t=new Thread(r);
+        t.start();
+    }
+    //
+
+//set_cursor_waiting(scene);
+
+//void wait(0.0001)
+
+//task...
+
+//set_cursor_normal(scene);
+
+//
 
 }
