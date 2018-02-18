@@ -91,6 +91,7 @@ public class WorkQuery {
         workdataEntity.setYear(year);
         workdataEntity.setEpoch(epoch);
         workdataEntity.setIdDescription(workDescriptionEntity.getIddescription());
+        workdataEntity.setIdImage(0);
 
         entityManager.persist(workdataEntity);
         entityManager.getTransaction().commit();

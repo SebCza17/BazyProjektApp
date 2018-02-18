@@ -45,7 +45,7 @@ public class MyProfileController {
             addressValue.setText(contactEntity.getAddress());
             titleValue.setText(descriptionEntity.getTitle());
             descValue.setText(descriptionEntity.getDescription());
-
+//????
             if(userdataEntity.getIdImage() != 0) {
                 profileImage.setImage(ImageQuery.getPicture(userdataEntity.getIdImage()));
             }
