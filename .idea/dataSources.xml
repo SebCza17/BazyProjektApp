@@ -10,16 +10,5 @@
         <property name="ApplicationName" value="DataGrip" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="NewPersistenceUnit/EclipseLink" uuid="8a3c2eaf-7d78-4ff8-ae8c-2fca393e9b7a">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>$PROJECT_DIR$/src/META-INF/persistence.xml</remarks>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://horton.elephantsql.com:5432/khgmqurw</jdbc-url>
-      <driver-properties>
-        <property name="ApplicationName" value="DataGrip" />
-      </driver-properties>
-    </data-source>
   </component>
 </project>

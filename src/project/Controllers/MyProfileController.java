@@ -13,6 +13,7 @@ import project.Main;
 
 import javax.persistence.EntityManager;
 import java.io.File;
+import java.net.MalformedURLException;
 
 
 public class MyProfileController {
@@ -27,7 +28,7 @@ public class MyProfileController {
     public ImageView profileImage;
 
 
-    public void initialize(){
+    public void initialize() throws MalformedURLException {
 
         if (MainQuery.checkUserDataExist()){
 
@@ -44,6 +45,10 @@ public class MyProfileController {
             addressValue.setText(contactEntity.getAddress());
             titleValue.setText(descriptionEntity.getTitle());
             descValue.setText(descriptionEntity.getDescription());
+
+            if(userdataEntity.getIdImage() != 0) {
+                profileImage.setImage(ImageQuery.getPicture(userdataEntity.getIdImage()));
+            }
 
         }
     }
