@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/ConnectionClass/UserQuery.java" afterPath="$PROJECT_DIR$/src/ConnectionClass/UserQuery.java" />
       <change beforePath="$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java" afterPath="$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java" />
-      <change beforePath="$PROJECT_DIR$/src/project/Controllers/MyProfileController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/MyProfileController.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -148,7 +147,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkQuery.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WorkQuery.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="370">
@@ -158,7 +157,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="images" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserQuery.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ConnectionClass/UserQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="84" column="37" lean-forward="true" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="images" pinned="false" current-in-tab="true">
         <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.images">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -167,22 +176,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserQuery.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ConnectionClass/UserQuery.java">
+      <file leaf-file-name="ImageQuery.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ConnectionClass/ImageQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+            <state relative-caret-position="118">
+              <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageQuery.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ConnectionClass/ImageQuery.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="217">
+              <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+              <folding>
+                <element signature="method#showRegister#0;class#Main#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AfterLoginMainFrameController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#600#601#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -268,8 +291,8 @@
         <option value="$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java" />
         <option value="$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java" />
         <option value="$PROJECT_DIR$/src/project/Controllers/MyProfileController.java" />
-        <option value="$PROJECT_DIR$/src/ConnectionClass/UserQuery.java" />
         <option value="$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java" />
+        <option value="$PROJECT_DIR$/src/ConnectionClass/UserQuery.java" />
       </list>
     </option>
   </component>
@@ -884,11 +907,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518997996556</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="naprawda bledu">
+      <created>1518999777701</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1518999777701</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143633000" />
+    <option name="totallyTimeSpent" value="143964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1081,16 +1111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#600#601#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/07ed8761-1762-4569-a6e3-3132812a48fe/console.sql" />
     <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.location" />
     <entry file="file://$PROJECT_DIR$/src/project/Controllers/EditCollectionController.java">
@@ -1220,24 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding>
-            <element signature="method#initMyProfile#0;class#Main#0" expanded="false" />
-            <element signature="method#showRegister#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
@@ -1344,16 +1346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.userdata">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ctid" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.work">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1368,29 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.images">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/UserQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/ImageQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Controllers/MyProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1399,11 +1368,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/ImageQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding>
+            <element signature="method#showRegister#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#600#601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="93" column="35" lean-forward="false" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/UserQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="84" column="37" lean-forward="true" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.userdata">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ctid" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.images">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
