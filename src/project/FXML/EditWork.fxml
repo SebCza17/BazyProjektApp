@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.EditWorkController">
+    <panes>
+        <TitledPane animated="false" text="Author">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Accordion layoutX="14.0" layoutY="14.0" prefHeight="293.0" prefWidth="508.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                            <panes>
+                                <TitledPane animated="false" text="Personal Data">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                            <children>
+                                                <TextField fx:id="AuthorNameField" layoutX="14.0" layoutY="14.0" promptText="Name*" AnchorPane.leftAnchor="10.0" />
+                                                <TextField fx:id="AuthorSurnameField" layoutX="14.0" layoutY="39.0" promptText="Surname" AnchorPane.leftAnchor="10.0" />
+                                                <!--delete -->    <TextField layoutX="14.0" layoutY="64.0" promptText="Age" AnchorPane.leftAnchor="10.0" /> <!--delete -->
+                                                <TextField fx:id="AuthorBornField" layoutX="14.0" layoutY="87.0" promptText="Born" AnchorPane.leftAnchor="10.0" />
+                                                <TextField fx:id="AuthorDeathField" layoutX="14.0" layoutY="112.0" promptText="Death" AnchorPane.leftAnchor="10.0" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                                <TitledPane animated="false" text="Contact">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                            <children>
+                                                <TextField fx:id="AuthorPhoneNField" layoutX="14.0" layoutY="14.0" promptText="Phone Number" AnchorPane.leftAnchor="10.0" />
+                                                <TextField fx:id="AuthorEmailField" layoutX="14.0" layoutY="39.0" promptText="Email" AnchorPane.leftAnchor="10.0" />
+                                                <TextField fx:id="AuthorAddressField" layoutX="14.0" layoutY="64.0" promptText="Address" AnchorPane.leftAnchor="10.0" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                                <TitledPane animated="false" text="Description">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                            <children>
+                                                <TextField fx:id="AuthorTitleDescField" layoutX="14.0" layoutY="14.0" promptText="Title" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="5.0" />
+                                                <TextArea fx:id="AuthorDescArea" layoutX="14.0" layoutY="45.0" prefHeight="140.0" prefWidth="200.0" promptText="Description" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="35.0" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                            </panes>
+                        </Accordion>
+                    </children></AnchorPane>
+            </content>
+        </TitledPane>
+        <TitledPane animated="false" text="Description">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="WorkTitleDescField" layoutX="14.0" layoutY="14.0" promptText="Title*" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                        <TextArea fx:id="WorkDescArea" layoutX="34.6" layoutY="69.6" prefHeight="200.0" prefWidth="340.0" promptText="Description" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="50.0" />
+                    </children></AnchorPane>
+            </content>
+        </TitledPane>
+        <TitledPane animated="false" text="Work Data">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="540.0">
+                    <children>
+                        <TextField fx:id="WorkYearField" layoutX="14.0" layoutY="14.0" promptText="Year" AnchorPane.leftAnchor="10.0" />
+                        <TextField fx:id="WorkEpochField" layoutX="14.0" layoutY="39.0" promptText="Epoch" AnchorPane.leftAnchor="10.0" />
+                        <Button fx:id="EditButton" layoutX="397.0" layoutY="285.0" mnemonicParsing="false" text="Edit" onAction="#onClickEdit" />
+                    </children></AnchorPane>
+            </content>
+        </TitledPane>
+    </panes>
+</Accordion>

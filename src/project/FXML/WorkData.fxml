@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.WorkDataController">
     <children>
-        <Button layoutX="534.0" layoutY="14.0" mnemonicParsing="false" text="Edit Work" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+        <Button layoutX="534.0" layoutY="14.0" mnemonicParsing="false" text="Edit Work" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" onAction="#onClickEdit" />
       <Button layoutX="444.0" layoutY="10.0" mnemonicParsing="false" text="Add Image" onAction="#onClickAddImage" />
       <HBox layoutX="377.0" layoutY="52.0" prefHeight="348.0" prefWidth="209.0">
          <children>

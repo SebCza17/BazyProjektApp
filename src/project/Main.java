@@ -253,6 +253,31 @@ public class Main extends Application {
 
     }
 
+    public static void showEditWork(){
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("FXML/EditWork.fxml"));
+            Accordion page = loader.load();
+
+            Stage newWork = new Stage();
+            newWork.initModality(Modality.WINDOW_MODAL);
+            newWork.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            newWork.setScene(scene);
+            //newWork.setMinWidth(506);
+            //newWork.setMinHeight(379);
+
+            newWork.setResizable(false);
+
+            newWork.showAndWait();
+
+
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+
+    }
+
     public static void showLogin(){
         try {
             FXMLLoader loader = new FXMLLoader();

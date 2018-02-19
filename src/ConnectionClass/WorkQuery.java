@@ -146,4 +146,22 @@ public class WorkQuery {
         entityManager.getTransaction().commit();
         MainQuery.closeConnection(entityManager);
     }
+
+    public static void editWork(PersonaldataEntity personaldataEntity,ContactEntity contactEntity,WorkdataEntity workdataEntity, DescriptionEntity descriptionEntityWork, DescriptionEntity descriptionEntityAuthor)
+    {
+
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        entityManager.getTransaction().begin();
+
+        entityManager.merge(personaldataEntity);
+        entityManager.merge(contactEntity);
+        entityManager.merge(descriptionEntityAuthor);
+        entityManager.merge(descriptionEntityWork);
+        entityManager.merge(workdataEntity);
+
+        entityManager.getTransaction().commit();
+
+        MainQuery.closeConnection(entityManager);
+    }
 }

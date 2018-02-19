@@ -43,6 +43,10 @@ public class WorkDataController {
         WorkQuery.editImageId(i);
 
     }
+
+    public void onClickEdit(ActionEvent actionEvent) {
+        Main.showEditWork();
+    }
 }
 
 
