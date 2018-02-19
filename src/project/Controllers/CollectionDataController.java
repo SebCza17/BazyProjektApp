@@ -33,7 +33,7 @@ public class CollectionDataController {
 
     public void initialize(){
         if(!Main.userEntity.getPermissions().equals("Admin")) adminButton.setVisible(false);
-        
+
         collectionEntity = Main.collectionEntity;
         System.out.println(collectionEntity.getIdcollection());
         showWork(0);

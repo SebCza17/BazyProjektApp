@@ -3,19 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java" />
-      <change beforePath="$PROJECT_DIR$/src/project/Controllers/BeforeLoginMainFrameController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/BeforeLoginMainFrameController.java" />
+      <change beforePath="$PROJECT_DIR$/src/ConnectionClass/ImageQuery.java" afterPath="$PROJECT_DIR$/src/ConnectionClass/ImageQuery.java" />
+      <change beforePath="$PROJECT_DIR$/src/ConnectionClass/UserQuery.java" afterPath="$PROJECT_DIR$/src/ConnectionClass/UserQuery.java" />
+      <change beforePath="$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java" afterPath="$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java" />
       <change beforePath="$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java" />
       <change beforePath="$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java" />
-      <change beforePath="$PROJECT_DIR$/src/project/Controllers/EditProfileController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/EditProfileController.java" />
-      <change beforePath="$PROJECT_DIR$/src/project/Controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/LoginController.java" />
       <change beforePath="$PROJECT_DIR$/src/project/Controllers/MyProfileController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/MyProfileController.java" />
-      <change beforePath="$PROJECT_DIR$/src/project/FXML/AfterLoginMainFrame.fxml" afterPath="$PROJECT_DIR$/src/project/FXML/AfterLoginMainFrame.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/project/FXML/CollectionData.fxml" afterPath="$PROJECT_DIR$/src/project/FXML/CollectionData.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/project/FXML/CollectionView.fxml" afterPath="$PROJECT_DIR$/src/project/FXML/CollectionView.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/project/FXML/Login.fxml" afterPath="$PROJECT_DIR$/src/project/FXML/Login.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/project/FXML/MyProfile.fxml" afterPath="$PROJECT_DIR$/src/project/FXML/MyProfile.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/project/Main.java" afterPath="$PROJECT_DIR$/src/project/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/project/Controllers/WorkDataController.java" afterPath="$PROJECT_DIR$/src/project/Controllers/WorkDataController.java" />
+      <change beforePath="$PROJECT_DIR$/src/project/FXML/WorkData.fxml" afterPath="$PROJECT_DIR$/src/project/FXML/WorkData.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -157,58 +152,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CollectionData.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/FXML/CollectionData.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
+      <file leaf-file-name="WorkDataController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/project/Controllers/WorkDataController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectionDataController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AfterLoginMainFrameController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AfterLoginMainFrame.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/FXML/AfterLoginMainFrame.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/Controllers/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="49" column="37" lean-forward="true" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="305">
+              <caret line="31" column="99" lean-forward="false" selection-start-line="31" selection-start-column="99" selection-end-line="31" selection-end-column="99" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,8 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/project/MainMethod.java" />
-        <option value="$PROJECT_DIR$/src/project/FXML/MainScene.fxml" />
         <option value="$PROJECT_DIR$/src/project/Controllers/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/project/FXML/BeforeLoginMainScene.fxml" />
         <option value="$PROJECT_DIR$/src/project/FXML/AfterLoginMainScene.fxml" />
@@ -268,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/project/FXML/AddWork.fxml" />
         <option value="$PROJECT_DIR$/src/project/Controllers/AddWorkController.java" />
         <option value="$PROJECT_DIR$/src/project/Controllers/AddCollectionController.java" />
-        <option value="$PROJECT_DIR$/src/project/FXML/WorkData.fxml" />
         <option value="$PROJECT_DIR$/src/project/FXML/EditCollection.fxml" />
         <option value="$PROJECT_DIR$/src/ConnectionClass/ProfileQuery.java" />
         <option value="$PROJECT_DIR$/src/project/FXML/EditProfile.fxml" />
@@ -280,11 +228,8 @@
         <option value="$PROJECT_DIR$/src/project/FXML/ConnectionOff.fxml" />
         <option value="$PROJECT_DIR$/src/project/Controllers/ConnectionOffController.java" />
         <option value="$PROJECT_DIR$/src/ConnectionClass/MainQuery.java" />
-        <option value="$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java" />
-        <option value="$PROJECT_DIR$/src/ConnectionClass/UserQuery.java" />
         <option value="$PROJECT_DIR$/src/project/FXML/MyProfile.fxml" />
         <option value="$PROJECT_DIR$/src/project/Controllers/EditProfileController.java" />
-        <option value="$PROJECT_DIR$/src/project/Controllers/MyProfileController.java" />
         <option value="$PROJECT_DIR$/src/project/Main.java" />
         <option value="$PROJECT_DIR$/src/project/Controllers/BeforeLoginMainFrameController.java" />
         <option value="$PROJECT_DIR$/src/project/FXML/BeforeLoginMainFrame.fxml" />
@@ -293,9 +238,15 @@
         <option value="$PROJECT_DIR$/src/project/FXML/CollectionView.fxml" />
         <option value="$PROJECT_DIR$/src/project/FXML/AfterLoginMainFrame.fxml" />
         <option value="$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java" />
-        <option value="$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java" />
         <option value="$PROJECT_DIR$/src/project/FXML/CollectionData.fxml" />
         <option value="$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java" />
+        <option value="$PROJECT_DIR$/src/project/FXML/WorkData.fxml" />
+        <option value="$PROJECT_DIR$/src/ConnectionClass/UserQuery.java" />
+        <option value="$PROJECT_DIR$/src/ConnectionClass/ImageQuery.java" />
+        <option value="$PROJECT_DIR$/src/project/Controllers/MyProfileController.java" />
+        <option value="$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java" />
+        <option value="$PROJECT_DIR$/src/project/Controllers/WorkDataController.java" />
+        <option value="$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java" />
       </list>
     </option>
   </component>
@@ -925,15 +876,21 @@
       <option name="project" value="LOCAL" />
       <updated>1519000108253</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Pre-Finall Commit">
+      <created>1519007111114</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1519007111114</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149202000" />
+    <option name="totallyTimeSpent" value="151491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -950,8 +907,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.203125" sideWeight="0.6703755" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32083333" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.203125" sideWeight="0.6703755" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1421875" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1043,7 +1000,6 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <MESSAGE value="Nothing important" />
     <MESSAGE value="Ustawienie Usera w zmiennej globalnej bo zalogowaniu i przejscie do okna usera" />
     <MESSAGE value="mały edit do logowania z metoda getiduser" />
     <MESSAGE value="I don't know what im doing here" />
@@ -1068,7 +1024,8 @@
     <MESSAGE value="little edit CollectienView" />
     <MESSAGE value="test connection add on start" />
     <MESSAGE value="naprawda bledu" />
-    <option name="LAST_COMMIT_MESSAGE" value="naprawda bledu" />
+    <MESSAGE value="Pre-Finall Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pre-Finall Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1162,37 +1119,6 @@
     <entry file="das://table:/19e0d2dd/8a3c2eaf-7d78-4ff8-ae8c-2fca393e9b7a/khgmqurw.public.personaldata" />
     <entry file="das://table:/19e0d2dd/8a3c2eaf-7d78-4ff8-ae8c-2fca393e9b7a/khgmqurw.public.userdata" />
     <entry file="das://table:/19e0d2dd/8a3c2eaf-7d78-4ff8-ae8c-2fca393e9b7a/khgmqurw.public.images" />
-    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/MainQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="method#getDescription#0;class#MainQuery#0" expanded="false" />
-            <element signature="method#getDescription#1;class#MainQuery#0" expanded="false" />
-            <element signature="method#getContact#0;class#MainQuery#0" expanded="false" />
-            <element signature="method#getLocation#0;class#MainQuery#0" expanded="false" />
-            <element signature="method#getLocation#1;class#MainQuery#0" expanded="false" />
-            <element signature="method#getPersonalData#0;class#MainQuery#0" expanded="false" />
-            <element signature="method#getPersonalData#1;class#MainQuery#0" expanded="false" />
-            <element signature="method#getUserData#0;class#MainQuery#0" expanded="false" />
-            <element signature="method#getAuthor#0;class#MainQuery#0" expanded="false" />
-            <element signature="method#getAuthor#1;class#MainQuery#0" expanded="false" />
-            <element signature="e#6898#6899#0" expanded="false" />
-            <element signature="e#6934#6935#0" expanded="false" />
-            <element signature="e#7003#7004#0" expanded="false" />
-            <element signature="e#7038#7039#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/WorkDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.collection">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1211,16 +1137,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.workdata">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ctid" enabled="false" />
-          </column-attributes>
         </state>
       </provider>
     </entry>
@@ -1279,22 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/UserQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="84" column="37" lean-forward="true" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/ImageQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JPAEntity/UserdataEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1311,41 +1211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/FXML/MyProfile.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="95" column="34" lean-forward="false" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="93" column="35" lean-forward="false" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/EditProfileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/MyProfileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-372">
-          <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1357,17 +1222,6 @@
             <element signature="e#11445#11446#0" expanded="true" />
             <element signature="e#11508#11509#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/FXML/WorkData.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="179" lean-forward="false" selection-start-line="6" selection-start-column="179" selection-end-line="6" selection-end-column="179" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,22 +1281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="67" column="73" lean-forward="false" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/FXML/AfterLoginMainFrame.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1465,11 +1303,127 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/AfterLoginMainFrameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/EditProfileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionDataController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="359">
+          <caret line="82" column="37" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/42986183/07ed8761-1762-4569-a6e3-3132812a48fe/khgmqurw.public.workdata">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ctid" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/FXML/MyProfile.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="95" column="34" lean-forward="false" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/FXML/WorkData.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="112" lean-forward="false" selection-start-line="12" selection-start-column="112" selection-end-line="12" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/MainQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="144" column="70" lean-forward="false" selection-start-line="144" selection-start-column="70" selection-end-line="144" selection-end-column="70" />
+          <folding>
+            <element signature="method#getDescription#0;class#MainQuery#0" expanded="false" />
+            <element signature="method#getDescription#1;class#MainQuery#0" expanded="false" />
+            <element signature="method#getContact#0;class#MainQuery#0" expanded="false" />
+            <element signature="method#getLocation#0;class#MainQuery#0" expanded="false" />
+            <element signature="method#getLocation#1;class#MainQuery#0" expanded="false" />
+            <element signature="method#getPersonalData#0;class#MainQuery#0" expanded="false" />
+            <element signature="method#getPersonalData#1;class#MainQuery#0" expanded="false" />
+            <element signature="method#getAuthor#0;class#MainQuery#0" expanded="false" />
+            <element signature="method#getAuthor#1;class#MainQuery#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/ImageQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/WorkQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="121" column="30" lean-forward="true" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectionClass/UserQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/CollectionViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/MyProfileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="55" column="70" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/WorkDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="31" column="99" lean-forward="false" selection-start-line="31" selection-start-column="99" selection-end-line="31" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

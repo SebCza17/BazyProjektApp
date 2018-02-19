@@ -25,7 +25,7 @@ public class ImageQuery {
         return picInBytes;
     }
 
-    public static void addProfilePicture(File pictureFile){
+    public static int addProfilePicture(File pictureFile){
         EntityManager entityManager = MainQuery.initialConnection();
         entityManager.getTransaction().begin();
 
@@ -39,16 +39,7 @@ public class ImageQuery {
         entityManager.persist(imagesEntity);
         entityManager.getTransaction().commit();
 
-
-                            //PRZYPISYWANIE DO PROFILU
-        entityManager.getTransaction().begin();
-
-        UserdataEntity userdataEntity=MainQuery.getUserData();
-        userdataEntity.setIdImage(imagesEntity.getIdimage());
-
-        entityManager.merge(userdataEntity);
-        entityManager.getTransaction().commit();
-        MainQuery.closeConnection(entityManager);
+        return imagesEntity.getIdimage();
     }
 
     public static Image getPicture(int i) throws MalformedURLException {

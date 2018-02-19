@@ -2,6 +2,7 @@ package ConnectionClass;
 
 import JPAEntity.*;
 import project.Controllers.CollectionDataController;
+import project.Controllers.WorkDataController;
 import project.Main;
 
 import javax.persistence.EntityManager;
@@ -131,5 +132,18 @@ public class WorkQuery {
         MainQuery.closeConnection(entityManager);
 
         return workdataEntity;
+    }
+
+    public static void editImageId(int i){
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        entityManager.getTransaction().begin();
+
+        WorkdataEntity workdataEntity=getWorkData(WorkDataController.workEntity.getIdwork());
+        workdataEntity.setIdImage(i);
+
+        entityManager.merge(workdataEntity);
+        entityManager.getTransaction().commit();
+        MainQuery.closeConnection(entityManager);
     }
 }

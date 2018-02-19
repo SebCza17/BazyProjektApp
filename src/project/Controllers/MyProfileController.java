@@ -2,6 +2,7 @@ package project.Controllers;
 
 import ConnectionClass.ImageQuery;
 import ConnectionClass.MainQuery;
+import ConnectionClass.UserQuery;
 import JPAEntity.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -68,19 +69,11 @@ public class MyProfileController {
         chooser.setTitle("Open File");
         chooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
         File file = chooser.showOpenDialog(new Stage());
-        ImageQuery.addProfilePicture(file);
+
+        int i = ImageQuery.addProfilePicture(file);
+        UserQuery.editImageId(i);
 
         Main.initMyProfile();
-
-        //ODCZYTYWANIE ZDJĘCIA
-//        EntityManager entityManager = MainQuery.initialConnection();
-//        entityManager.getTransaction().begin();
-//
-//        UserdataEntity userdataEntity=MainQuery.getUserData();
-//        ImagesEntity imagesEntity = new ImagesEntity();
-//        imagesEntity.setIdimage(userdataEntity.getIdImage());
-//
-//        ImageQuery.getPicture(imagesEntity);
 
     }
 

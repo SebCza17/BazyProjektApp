@@ -31,6 +31,8 @@ public class CollectionViewController {
 
     public void initialize(){
 
+
+        stage.setCursor(Cursor.DEFAULT);
         showCollection(0);
 
     }
@@ -66,8 +68,6 @@ public class CollectionViewController {
             hBox.setOnMouseClicked(new javafx.event.EventHandler<javafx.scene.input.MouseEvent>() {
                 @Override
                 public void handle(javafx.scene.input.MouseEvent event) {
-
-                    stage.setCursor(Cursor.WAIT);
 
                     Timeline timeline = new Timeline(new KeyFrame(
                             Duration.millis(1)));

@@ -92,5 +92,18 @@ public class UserQuery {
 
     }
 
+    public static void editImageId(int i){
+        EntityManager entityManager = MainQuery.initialConnection();
+
+        entityManager.getTransaction().begin();
+
+        UserdataEntity userdataEntity=MainQuery.getUserData();
+        userdataEntity.setIdImage(i);
+
+        entityManager.merge(userdataEntity);
+        entityManager.getTransaction().commit();
+        MainQuery.closeConnection(entityManager);
+    }
+
 
 }
