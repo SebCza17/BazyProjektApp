@@ -9,6 +9,7 @@
    <children>
       <Button layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickAdd" text="Add Work" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
       <Button layoutX="417.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickEditColl" prefWidth="100.0" text="Edit Collection" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="10.0" />
+      <Button layoutX="317.0" fx:id="adminButton" layoutY="10.0" mnemonicParsing="false" text="Add Some More" onAction="#addSomeMoreWork"/>
       <ScrollPane layoutX="-1.0" layoutY="49.0" prefHeight="400.0" prefWidth="611.0">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="582.0">

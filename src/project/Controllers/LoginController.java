@@ -4,10 +4,12 @@ import ConnectionClass.MainQuery;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
+import javafx.scene.Cursor;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -22,6 +24,7 @@ public class LoginController {
     public Label ErrorLabel;
     public TextField EmailField;
     public PasswordField PassField;
+    public AnchorPane stage;
 
 
     @FXML
@@ -31,6 +34,7 @@ public class LoginController {
     }
 
     private void end(){
+
         Main.initMainFrameAfterLogin();
         onClickCancel();
     }
@@ -40,6 +44,7 @@ public class LoginController {
             ErrorLabel.setText("Success! \t Please Wait...");
             ErrorLabel.setTextFill(Color.web("Green"));
 
+            stage.setCursor(Cursor.WAIT);
 
             Timeline timeline = new Timeline(new KeyFrame(
                     Duration.millis(1),

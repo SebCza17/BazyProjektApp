@@ -82,6 +82,8 @@ public class EditProfileController {
                     Main.stageClose(actionEvent);
                 }
 
+        Main.initMyProfile();
+
     }
 
 

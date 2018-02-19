@@ -1,7 +1,10 @@
 package project.Controllers;
 
+import ConnectionClass.CollectionQuery;
 import ConnectionClass.MainQuery;
 import JPAEntity.CollectionEntity;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Cursor;
@@ -10,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
+import javafx.util.Duration;
 import project.Main;
 
 
@@ -22,6 +26,7 @@ public class CollectionViewController {
 
     public VBox vBox;
     public AnchorPane anchorPane;
+    public AnchorPane stage;
     int maxShow = 5;
 
     public void initialize(){
@@ -61,6 +66,14 @@ public class CollectionViewController {
             hBox.setOnMouseClicked(new javafx.event.EventHandler<javafx.scene.input.MouseEvent>() {
                 @Override
                 public void handle(javafx.scene.input.MouseEvent event) {
+
+                    stage.setCursor(Cursor.WAIT);
+
+                    Timeline timeline = new Timeline(new KeyFrame(
+                            Duration.millis(1)));
+                    timeline.play();
+
+
                     int idCollection = collectionEntity.getIdcollection();
 
                     System.out.println("test" + idCollection);
@@ -83,8 +96,6 @@ public class CollectionViewController {
                 }
             });
 
-
-
             hBox.getChildren().addAll(label,region, label1);
 
             vBox.getChildren().add(hBox);
@@ -102,6 +113,7 @@ public class CollectionViewController {
         button.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
+                
                 vBox.getChildren().remove(hBox);
 
                 if(collectionEntities.size()>maxShow) {
@@ -117,30 +129,7 @@ public class CollectionViewController {
 
         MainQuery.closeConnection(entityManager);
     }
-    private void set_cursor_waiting(final Scene scene)
-    {
-        Runnable r=new Runnable() {
 
-            @Override
-            public void run() {
-                scene.setCursor(Cursor.WAIT);
-            }
-        };
-        Thread t=new Thread(r);
-        t.start();
-    }
-    private void set_cursor_normal(final Scene scene)
-    {
-        Runnable r=new Runnable() {
-
-            @Override
-            public void run() {
-                scene.setCursor(Cursor.DEFAULT);
-            }
-        };
-        Thread t=new Thread(r);
-        t.start();
-    }
     //
 
 //set_cursor_waiting(scene);

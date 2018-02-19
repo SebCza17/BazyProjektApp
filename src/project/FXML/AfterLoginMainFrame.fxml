@@ -16,6 +16,8 @@
                   <MenuItem mnemonicParsing="false" onAction="#onClickMyProfile" text="My Profile" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" onAction="#onClickSignOut" text="Sign Out" />
+                  <SeparatorMenuItem fx:id="adminSeparator" mnemonicParsing="false"/>
+                  <MenuItem fx:id="adminItem1" mnemonicParsing="false" text="Add Some More" onAction="#addSomeMoreCollection" />
             </items>
           </Menu>
         </menus>

@@ -1,6 +1,7 @@
 package project.Controllers;
 
 import ConnectionClass.MainQuery;
+import ConnectionClass.WorkQuery;
 import JPAEntity.CollectionEntity;
 import JPAEntity.WorkEntity;
 import javafx.event.ActionEvent;
@@ -27,12 +28,23 @@ public class CollectionDataController {
 
     public VBox vBox;
     public static CollectionEntity collectionEntity = Main.collectionEntity;
+    public Button adminButton;
     int maxShow = 5;
 
     public void initialize(){
+        if(!Main.userEntity.getPermissions().equals("Admin")) adminButton.setVisible(false);
+        
         collectionEntity = Main.collectionEntity;
         System.out.println(collectionEntity.getIdcollection());
         showWork(0);
+    }
+
+    public void addSomeMoreWork(){
+        for (int i = 0; i < 10; i++){
+            WorkQuery.addWork("Mistrz Painta" + i, "Gumis", "10-10-2010", "11-10-2010",
+                    "123123", "SAS@gmail.com", "Daleka22", "GdybyMialNogi", "to i tak nic",
+                    "Wielka Sztuka", "dasdzxczxc", "1550", "sredniowiecze");
+        }
     }
 
     private void showWork(int i){
@@ -129,4 +141,5 @@ public class CollectionDataController {
     public void onClickEditColl(ActionEvent actionEvent) {
         Main.editCollection();
     }
+
 }

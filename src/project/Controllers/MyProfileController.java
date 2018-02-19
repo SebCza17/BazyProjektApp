@@ -5,6 +5,7 @@ import ConnectionClass.MainQuery;
 import JPAEntity.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
@@ -26,11 +27,15 @@ public class MyProfileController {
     public Label titleValue;
     public Label descValue;
     public ImageView profileImage;
+    public Button addPhotoButton;
 
 
     public void initialize() throws MalformedURLException {
 
-        if (MainQuery.checkUserDataExist()){
+        if(!MainQuery.checkUserDataExist()) addPhotoButton.setDisable(true);
+        else addPhotoButton.setDisable(false);
+
+            if (MainQuery.checkUserDataExist()){
 
             UserdataEntity userdataEntity=MainQuery.getUserData();
             PersonaldataEntity personaldataEntity = MainQuery.getPersonalData(userdataEntity.getIdPersonalData());
@@ -46,9 +51,9 @@ public class MyProfileController {
             titleValue.setText(descriptionEntity.getTitle());
             descValue.setText(descriptionEntity.getDescription());
 //????
-            if(userdataEntity.getIdImage() != 0) {
-                profileImage.setImage(ImageQuery.getPicture(userdataEntity.getIdImage()));
-            }
+
+            profileImage.setImage(ImageQuery.getPicture(userdataEntity.getIdImage()));
+
 
         }
     }
@@ -64,6 +69,8 @@ public class MyProfileController {
         chooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
         File file = chooser.showOpenDialog(new Stage());
         ImageQuery.addProfilePicture(file);
+
+        Main.initMyProfile();
 
         //ODCZYTYWANIE ZDJĘCIA
 //        EntityManager entityManager = MainQuery.initialConnection();

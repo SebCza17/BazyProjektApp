@@ -9,6 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Accordion;
@@ -81,6 +82,7 @@ public class Main extends Application {
 
     public static void initMainFrameAfterLogin() {
         try{
+
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("FXML/AfterLoginMainFrame.fxml"));
             FrameAfterLogin = loader.load();
@@ -359,5 +361,30 @@ public class Main extends Application {
         Node source = (Node) actionEvent.getSource();
         Stage stage = (Stage) source.getScene().getWindow();
         stage.close();
+    }
+
+    public static void set_cursor_waiting(final Scene scene)
+    {
+        Runnable r=new Runnable() {
+
+            @Override
+            public void run() {
+                scene.setCursor(Cursor.WAIT);
+            }
+        };
+        Thread t=new Thread(r);
+        t.start();
+    }
+    public static void set_cursor_normal(final Scene scene)
+    {
+        Runnable r=new Runnable() {
+
+            @Override
+            public void run() {
+                scene.setCursor(Cursor.DEFAULT);
+            }
+        };
+        Thread t=new Thread(r);
+        t.start();
     }
 }

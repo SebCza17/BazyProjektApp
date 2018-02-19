@@ -93,7 +93,7 @@
          </children></Pane>
         <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
          <children>
-            <Button layoutX="188.0" layoutY="5.0" mnemonicParsing="false" onAction="#onClickAddPhoto" text="Add Photo" />
+            <Button fx:id="addPhotoButton" layoutX="188.0" layoutY="5.0" mnemonicParsing="false" onAction="#onClickAddPhoto" text="Add Photo" />
          </children></Pane>
         <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
         <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
