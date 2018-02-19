@@ -63,8 +63,7 @@ public class MyProfileController {
         chooser.setTitle("Open File");
         chooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
         File file = chooser.showOpenDialog(new Stage());
-        //DODAWANIE ZDJĘCIA
-        //ImageQuery.addProfilePicture(file);
+        ImageQuery.addProfilePicture(file);
 
         //ODCZYTYWANIE ZDJĘCIA
 //        EntityManager entityManager = MainQuery.initialConnection();

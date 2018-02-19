@@ -82,7 +82,7 @@ public class UserQuery {
         userdataEntity.setIdPersonalData(personaldataEntity.getIdpersonaldata());
         userdataEntity.setIdContact(contactEntity.getIdcontact());
         userdataEntity.setIdDescription(descriptionEntity.getIddescription());
-        userdataEntity.setIdImage(0);
+        userdataEntity.setIdImage(1);
         //Persist&Commit
         entityManager.persist(userdataEntity);
         entityManager.getTransaction().commit();
